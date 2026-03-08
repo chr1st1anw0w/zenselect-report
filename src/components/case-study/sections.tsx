@@ -2,13 +2,48 @@
 
 import { motion, Variants } from "framer-motion";
 import {
-  Fingerprint, Activity, Network, Eye, GitCommitHorizontal,
-  FileText, CheckCircle2, Target, Leaf, LayoutGrid, Wind,
-  Search, Users, MessageSquare, BarChart3, Layers, MousePointerClick,
-  TrendingUp, CheckSquare, Wrench, Compass, Map as MapIcon,
-  ChevronRight, Globe2, AlertCircle, Zap, ShieldCheck, Microscope,
-  Lightbulb, Rocket, Quote, ArrowRight, Smartphone, Monitor, Database,
-  Brain, Heart, Sparkles, ShoppingBag, Truck, BadgeCheck
+  Fingerprint,
+  Activity,
+  Network,
+  Eye,
+  GitCommitHorizontal,
+  FileText,
+  CheckCircle2,
+  Target,
+  Leaf,
+  LayoutGrid,
+  Wind,
+  Search,
+  Users,
+  MessageSquare,
+  BarChart3,
+  Layers,
+  MousePointerClick,
+  TrendingUp,
+  CheckSquare,
+  Wrench,
+  Compass,
+  Map as MapIcon,
+  ChevronRight,
+  Globe2,
+  AlertCircle,
+  Zap,
+  ShieldCheck,
+  Microscope,
+  Lightbulb,
+  Rocket,
+  Quote,
+  ArrowRight,
+  Smartphone,
+  Monitor,
+  Database,
+  Brain,
+  Heart,
+  Sparkles,
+  ShoppingBag,
+  Truck,
+  BadgeCheck,
+  Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { AnimatedLineChart, EmotionSwimlane, MarketInsightGrid } from "./charts";
@@ -30,6 +65,70 @@ const itemVariants: Variants = {
 const hoverScale: Variants = {
   hover: { scale: 1.02, transition: { duration: 0.3 } }
 };
+
+export const ResearchMethodology = () => (
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 md:p-12">
+    {[
+      { label: "Qualitative", value: "50", sub: "Deep Interviews", icon: <MessageSquare className="w-5 h-5 text-cedar"/>, detail: "1-on-1 sessions exploring emotional triggers." },
+      { label: "Quantitative", value: "500+", sub: "Survey Respondents", icon: <BarChart3 className="w-5 h-5 text-cedar"/>, detail: "Market validation across demographics." },
+      { label: "Behavioral", value: "1.2k", sub: "Heatmap Sessions", icon: <MousePointerClick className="w-5 h-5 text-cedar"/>, detail: "Tracking scroll depth and click patterns." },
+      { label: "Usability", value: "15", sub: "Task Success Tests", icon: <CheckCircle2 className="w-5 h-5 text-cedar"/>, detail: "Iterative testing of low-fi prototypes." }
+    ].map((item, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: i * 0.15 }}
+        whileHover={{ scale: 1.05, borderColor: "#8B7355", boxShadow: "0 20px 40px rgba(0,0,0,0.05)" }}
+        className="bg-white border border-ink/5 p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 group"
+      >
+        <div className="p-4 bg-canvas rounded-lg mb-6 group-hover:bg-cedar/10 transition-colors">
+          {item.icon}
+        </div>
+        <p className="text-5xl font-display text-ink mb-2 group-hover:text-cedar transition-colors">{item.value}</p>
+        <p className="font-mono text-[10px] font-bold text-cedar uppercase tracking-widest mb-4">{item.sub}</p>
+        <div className="h-px w-8 bg-cedar/20 mb-4" />
+        <p className="text-xs opacity-60 font-sans-cn font-light leading-relaxed">{item.detail}</p>
+      </motion.div>
+    ))}
+  </div>
+);
+
+export const SentimentAnalysis = () => (
+  <motion.div variants={itemVariants} className="mt-20 bg-white border border-ink/5 p-6 md:p-12 shadow-sm">
+    <div className="flex items-center gap-4 mb-12">
+      <Brain className="w-6 h-6 text-cedar" />
+      <h4 className="font-mono text-sm text-cedar font-bold tracking-[0.3em] uppercase">Qualitative Sentiment Analysis</h4>
+    </div>
+    <div className="grid md:grid-cols-3 gap-12">
+      {[
+        { label: "Craftsmanship", score: 92, insight: "Users frequently praised the 'Artisan' storytelling.", color: "bg-sage" },
+        { label: "Trustworthiness", score: 88, insight: "Transparency in material sourcing built high brand trust.", color: "bg-cedar" },
+        { label: "Ease of Use", score: 85, insight: "Simplified checkout significantly reduced friction.", color: "bg-ink" }
+      ].map((item, i) => (
+        <div key={i} className="space-y-6">
+          <div className="flex justify-between items-end">
+            <div>
+              <p className="font-mono text-[10px] opacity-40 uppercase tracking-widest mb-1">{item.label}</p>
+              <p className="text-4xl font-display text-ink">{item.score}%</p>
+            </div>
+            <Sparkles className="w-5 h-5 text-cedar/30" />
+          </div>
+          <div className="h-1 bg-ink/5 rounded-full overflow-hidden">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: `${item.score}%` }}
+              className={`h-full ${item.color}`}
+              transition={{ duration: 1.5, delay: i * 0.2 }}
+            />
+          </div>
+          <p className="text-xs font-sans-cn font-light opacity-60 leading-relaxed italic">&quot;{item.insight}&quot;</p>
+        </div>
+      ))}
+    </div>
+  </motion.div>
+);
 
 export const Hero = () => (
   <motion.section
@@ -98,14 +197,15 @@ export const Hero = () => (
               { id: "dna-1", icon: <Compass className="w-5 h-5 text-cedar/80 shrink-0"/>, title: "01. 台灣本土敘事 (Vernacular)", content: "針對「職人崇拜」整合霧靄綠 (#5A8A5A) 與檜木棕 (#8B7355)，強調在地溯源。打破進口品牌缺乏土地連結感的痛點。" },
               { id: "dna-2", icon: <LayoutGrid className="w-5 h-5 text-cedar/80 shrink-0"/>, title: "02. 北歐功能架構 (Scandi)", content: "運用 Grid-based Layout 降低高單價資訊的認知負荷。無襯線與等寬字型的交替使用，建立專家級的信任感。" },
               { id: "dna-3", icon: <Wind className="w-5 h-5 text-cedar/80 shrink-0"/>, title: "03. 東亞禪意空間 (Ma)", content: "負空間哲學。利用大量 Whitespace 與不對稱美學，營造數位空間的呼吸感，減少用戶的視覺壓迫。" }
-            ].map((item) => (
-              <AccordionItem key={item.id} value={item.id} className="border-white/10 group/item">
-                <AccordionTrigger className="hover:text-cedar hover:no-underline font-sans-cn text-lg py-5 font-semibold flex gap-3 justify-start text-left">
-                  {item.icon}
-                  <span className="transition-transform group-hover/item:translate-x-2 duration-300">{item.title}</span>
+            ].map((dna) => (
+              <AccordionItem key={dna.id} value={dna.id} className="border-white/10 last:border-0">
+                <AccordionTrigger className="text-xs md:text-sm font-sans-cn font-bold hover:no-underline hover:text-cedar py-6 transition-colors">
+                  <div className="flex items-center gap-4 text-left">
+                    {dna.icon} {dna.title}
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-sm opacity-80 font-sans-cn leading-relaxed font-light pb-8 pl-8 border-l border-cedar/20 ml-2.5">
-                  {item.content}
+                <AccordionContent className="text-xs font-sans-cn font-light opacity-60 leading-relaxed pb-8">
+                  {dna.content}
                 </AccordionContent>
               </AccordionItem>
             ))}
@@ -117,20 +217,19 @@ export const Hero = () => (
 );
 
 export const Process = () => (
-  <motion.section id="process" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="mb-48 border-y border-ink/10 py-32 bg-white/20">
-    <div className="max-w-screen-xl mx-auto px-4">
-      <div className="mb-20 flex flex-col md:flex-row md:items-center gap-6">
-        <span className="font-mono text-cedar text-sm font-bold tracking-widest uppercase flex items-center gap-3">
-          <Rocket className="w-5 h-5" /> Master Flow // 12-Week Sprint Architecture
-        </span>
-        <div className="hidden md:block flex-1 h-px bg-ink/10"></div>
-      </div>
+  <motion.section id="process" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="mb-56">
+    <div className="mb-20 flex items-center gap-4 md:p-8">
+      <span className="font-mono text-cedar text-sm font-bold tracking-[0.4em] flex items-center gap-3 uppercase">
+        <GitCommitHorizontal className="w-5 h-5"/> Section 00 // 專案執行時程與交付
+      </span>
+      <div className="flex-1 h-px bg-ink/10"></div>
+    </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:p-8 relative">
-        <div className="absolute top-6 md:p-10 left-0 w-full h-px bg-ink/10 hidden md:block"></div>
-
+    <div className="relative">
+      <div className="absolute top-1/2 left-0 right-0 h-px bg-ink/5 -translate-y-1/2 hidden lg:block" />
+      <div className="grid lg:grid-cols-5 gap-6 md:p-10">
         {[
-          { id: "W1-W3", title: "研究階段", sub: "Discover", icon: <Search className="w-4 h-4"/>, tasks: ["競品分析 (Matrix N=5)", "用戶深度訪談 (N=50+)", "親和圖 (Affinity Map)"] },
+          { id: "W1-W3", title: "研究階段", sub: "Discover", icon: <Search className="w-4 h-4"/>, tasks: ["市場競品分析", "深度訪談 (N=50+)", "親和圖 (Affinity Map)"] },
           { id: "W4-W5", title: "定義階段", sub: "Define", icon: <Target className="w-4 h-4"/>, tasks: ["Persona 建立", "體驗旅程 (Journey Map)", "HMW 核心機會點"] },
           { id: "W6-W8", title: "設計階段", sub: "Develop", icon: <LayoutGrid className="w-4 h-4"/>, tasks: ["IA 雙軸心架構", "低保真 Wireframes", "Design System 2.0"] },
           { id: "W9-W10", title: "驗證階段", sub: "Validate", icon: <ShieldCheck className="w-4 h-4"/>, tasks: ["Hi-Fi 原型測試", "眼動儀模擬 (Heatmap)", "UX 指標迭代"] },
@@ -139,7 +238,11 @@ export const Process = () => (
           <motion.div
             key={phase.id}
             variants={itemVariants}
-            whileHover={{ y: -12 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.1 }}
+            whileHover={{ y: -15, scale: 1.02 }}
             className="relative group cursor-default"
           >
             <div className={`h-full p-4 md:p-8 border transition-all duration-700 ${phase.highlight ? 'bg-ink text-canvas border-ink shadow-2xl scale-105 z-20' : 'bg-white border-ink/10 hover:border-cedar/50 hover:shadow-xl'}`}>
@@ -186,6 +289,7 @@ export const Discovery = () => (
     </div>
 
     <MarketInsightGrid />
+    <ResearchMethodology />
 
     <div className="grid lg:grid-cols-12 gap-6 md:p-12 mb-20">
       <motion.div variants={itemVariants} className="lg:col-span-7 bg-white/60 border border-ink/5 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl hover:bg-white relative overflow-hidden group">
@@ -222,13 +326,14 @@ export const Discovery = () => (
              <p className="font-mono text-xs text-cedar mb-6 font-bold tracking-widest uppercase">Interview Key Insights</p>
              <div className="space-y-6">
                {[
-                 { p: "「觸感」數位化", q: "「我不知道這木頭摸起來是什麼感覺...」", icon: <MousePointerClick className="w-3 h-3"/> },
+                 { p: "「觸感」數位化", q: "「我不知道這木頭摸起來是什麼感覺...」", icon: <Search className="w-3 h-3"/> },
                  { p: "決策過載", q: "「選項太多我反而會直接關掉頁面。」", icon: <AlertCircle className="w-3 h-3"/> },
-                 { p: "職人認同", q: "「知道是誰做的會讓我更想擁有它。」", icon: <ShieldCheck className="w-3 h-3"/> }
+                 { p: "職人認同", q: "「知道是誰做的會讓我更想擁有它。」", icon: <ShieldCheck className="w-3 h-3"/> },
+                 { p: "期待驚喜", q: "「開箱的瞬間應該像是一場藝術饗宴。」", icon: <Sparkles className="w-3 h-3"/> }
                ].map((item, i) => (
                  <div key={i} className="border-l-2 border-cedar/40 pl-4 group/item hover:border-cedar transition-colors">
-                   <p className="text-[10px] font-mono text-cedar mb-1 uppercase font-bold flex items-center gap-2">{item.p}</p>
-                   <p className="text-sm italic leading-snug opacity-80 group-hover/item:opacity-100 transition-opacity">“{item.q}”</p>
+                   <p className="text-[10px] font-mono text-cedar mb-1 uppercase font-bold flex items-center gap-2">{item.icon} {item.p}</p>
+                   <p className="text-sm italic leading-snug opacity-80 group-hover/item:opacity-100 transition-opacity">&ldquo;{item.q}&rdquo;</p>
                  </div>
                ))}
              </div>
@@ -356,7 +461,11 @@ export const Persona = () => (
          <motion.div
            key={i}
            variants={itemVariants}
-           whileHover={{ y: -15 }}
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ delay: i * 0.2 }}
+           whileHover={{ y: -20, boxShadow: "0 30px 60px rgba(0,0,0,0.1)" }}
            className={`bg-white/60 border border-ink/5 p-6 md:p-10 flex flex-col hover:shadow-2xl transition-all duration-700 ${persona.highlight ? 'border-b-8 border-b-cedar' : ''}`}
          >
             <div className="aspect-[4/5] bg-mist mb-10 grayscale hover:grayscale-0 transition-all duration-1000 overflow-hidden relative group/img">
@@ -574,19 +683,19 @@ export const Outcome = () => (
     <div className="grid lg:grid-cols-3 gap-6 md:p-12">
       {[
         { title: "UX 指標 (Usability)", icon: <MousePointerClick className="w-6 h-6"/>, metrics: [
-          { label: "Task Completion Rate", val: "85%", target: "85%", trend: "Optimal", color: "text-sage" },
-          { label: "SUS Score", val: "78/100", target: "75", trend: "+4%", color: "text-sage" },
-          { label: "Time to Discovery", val: "1.4m", target: "3.2m", trend: "-56%", color: "text-sage" }
+          { label: "Task Completion Rate", val: "85%", target: "85%", trend: "Optimal", color: "text-sage", icon: <Target className="w-3 h-3"/> },
+          { label: "SUS Score", val: "78/100", target: "75", trend: "+4%", color: "text-sage", icon: <CheckCircle2 className="w-3 h-3"/> },
+          { label: "Time to Discovery", val: "1.4m", target: "3.2m", trend: "-56%", color: "text-sage", icon: <Clock className="w-3 h-3"/> }
         ]},
         { title: "商業指標 (Business)", icon: <TrendingUp className="w-6 h-6"/>, metrics: [
-          { label: "Add-to-Cart Rate", val: "8.5%", target: "8%", trend: "+6.2%", color: "text-sage" },
-          { label: "Return Visit Rate", val: "32%", target: "30%", trend: "+6.6%", color: "text-sage" },
-          { label: "Conversion Rate", val: "4.2%", target: "3.5%", trend: "+20%", color: "text-sage" }
+          { label: "Add-to-Cart Rate", val: "8.5%", target: "8%", trend: "+6.2%", color: "text-sage", icon: <ShoppingBag className="w-3 h-3"/> },
+          { label: "Return Visit Rate", val: "32%", target: "30%", trend: "+6.6%", color: "text-sage", icon: <Users className="w-3 h-3"/> },
+          { label: "Conversion Rate", val: "4.2%", target: "3.5%", trend: "+20%", color: "text-sage", icon: <TrendingUp className="w-3 h-3"/> }
         ]},
         { title: "配送指標 (Logistics)", icon: <Truck className="w-6 h-6"/>, metrics: [
-          { label: "Logistics Transparency", val: "94%", target: "90%", trend: "Excellent", color: "text-sage" },
-          { label: "Package Safety Rating", val: "4.8/5", target: "4.5", trend: "High", color: "text-sage" },
-          { label: "Sustainable Packaging", val: "100%", target: "100%", trend: "Verified", color: "text-sage" }
+          { label: "Logistics Transparency", val: "94%", target: "90%", trend: "Excellent", color: "text-sage", icon: <Eye className="w-3 h-3"/> },
+          { label: "Package Safety Rating", val: "4.8/5", target: "4.5", trend: "High", color: "text-sage", icon: <ShieldCheck className="w-3 h-3"/> },
+          { label: "Sustainable Packaging", val: "100%", target: "100%", trend: "Verified", color: "text-sage", icon: <Leaf className="w-3 h-3"/> }
         ]}
       ].map((cat, i) => (
         <motion.div
@@ -605,7 +714,7 @@ export const Outcome = () => (
              {cat.metrics.map((m, j) => (
                <div key={j} className="group/metric">
                  <div className="flex justify-between font-mono text-xs mb-4 group-hover/metric:text-cedar transition-colors">
-                   <span className="font-bold">{m.label}</span>
+                   <span className="font-bold flex items-center gap-2">{m.icon} {m.label}</span>
                    <div className="flex items-center gap-3">
                      <span className={`text-[10px] ${m.color} bg-sage/5 px-2 py-0.5 rounded`}>{m.trend}</span>
                      <span className="text-cedar font-bold text-lg">{m.val}</span>
@@ -629,6 +738,7 @@ export const Outcome = () => (
         </motion.div>
       ))}
     </div>
+    <SentimentAnalysis />
   </motion.section>
 );
 
