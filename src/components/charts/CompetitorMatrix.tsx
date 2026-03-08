@@ -7,7 +7,7 @@ const Star = ({ filled }: { filled: boolean }) => (
   <span className={filled ? "text-cedar" : "text-ink/20"}>★</span>
 );
 
-const ScoreBar = ({ value, max = 5, highlight }: { value: number; max?: number; highlight: boolean }) => (
+const ScoreBar = ({ value, max = 5 }: { value: number; max?: number }) => (
   <div className="flex gap-1">
     {Array.from({ length: max }).map((_, i) => (
       <Star key={i} filled={i < value} />
