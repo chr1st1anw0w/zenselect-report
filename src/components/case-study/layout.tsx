@@ -1,7 +1,7 @@
 "use client";
 
-import { Activity } from "lucide-react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { Activity, Menu, X, ArrowUp } from "lucide-react";
+import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export const Header = () => {
@@ -13,8 +13,15 @@ export const Header = () => {
   });
 
   const [activeSection, setActiveSection] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -32,7 +39,10 @@ export const Header = () => {
       if (el) observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const navItems = [
@@ -44,41 +54,143 @@ export const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-canvas/90 backdrop-blur-xl border-b border-ink/10 px-8 py-5">
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${isScrolled ? 'py-4 bg-canvas/95 backdrop-blur-xl border-b border-ink/10 shadow-sm' : 'py-8 bg-transparent'}`}>
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-[2px] bg-cedar origin-left"
         style={{ scaleX }}
       />
-      <div className="max-w-screen-2xl mx-auto flex justify-between items-center">
+      <div className="max-w-screen-2xl mx-auto px-8 flex justify-between items-center">
         <div className="flex items-center gap-6">
-          <Activity className="text-cedar w-6 h-6" />
-          <p className="font-mono text-sm font-bold tracking-tighter text-ink">ZEN_SELECT // ANALYSIS_CORE</p>
-          <div className="w-px h-5 bg-ink/20 hidden md:block"></div>
-          <p className="font-mono text-xs opacity-50 hidden md:block tracking-widest text-ink">ACCESS_LEVEL: EXPERT_ONLY // v2026.03.08</p>
+          <motion.div
+            animate={{ rotate: isScrolled ? 360 : 0 }}
+            transition={{ duration: 1, ease: "circOut" }}
+          >
+            <Activity className="text-cedar w-6 h-6" />
+          </motion.div>
+          <div className="flex flex-col">
+            <p className="font-mono text-sm font-bold tracking-tighter text-ink uppercase">ZenSelect // Expert View</p>
+            <AnimatePresence>
+              {!isScrolled && (
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 0.5, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="font-mono text-[10px] tracking-widest text-ink uppercase"
+                >
+                  Analysis & Strategy Report v2.0
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
-        <nav className="flex gap-8 font-mono text-xs font-bold uppercase tracking-widest">
+
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex gap-10 font-mono text-xs font-bold uppercase tracking-[0.2em]">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`transition-all duration-300 hover:text-cedar ${
-                activeSection === item.id ? "text-cedar opacity-100 scale-110" : "text-ink opacity-70 hover:opacity-100"
-              } ${item.id === "process" ? "hidden lg:block" : ""}`}
+              className={`relative py-2 transition-all duration-300 group ${
+                activeSection === item.id ? "text-cedar" : "text-ink opacity-60 hover:opacity-100"
+              }`}
             >
               {item.label}
+              <motion.span
+                className={`absolute bottom-0 left-0 w-full h-px bg-cedar ${activeSection === item.id ? 'opacity-100' : 'opacity-0'}`}
+                layoutId="navUnderline"
+              />
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-cedar transition-all duration-300 group-hover:w-full opacity-50" />
             </a>
           ))}
         </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden p-2 text-ink hover:text-cedar transition-colors"
+        >
+          {isMenuOpen ? <X /> : <Menu />}
+        </button>
       </div>
+
+      {/* Mobile Nav Overlay */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-40 bg-ink text-canvas lg:hidden flex flex-col items-center justify-center gap-12"
+          >
+            {navItems.map((item, i) => (
+              <motion.a
+                key={item.id}
+                href={`#${item.id}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                onClick={() => setIsMenuOpen(false)}
+                className="text-3xl font-display font-light hover:text-cedar transition-colors"
+              >
+                {item.label.split('. ')[1]}
+              </motion.a>
+            ))}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.3 }}
+              className="absolute bottom-10 font-mono text-[10px] tracking-widest uppercase"
+            >
+              Expert Review Interface
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
 
-export const Footer = () => (
-  <footer className="border-t border-ink/5 mt-20 p-16 bg-white/60">
-     <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 font-mono text-xs tracking-widest font-bold">
-        <p className="opacity-50">© 2026 ZENSELECT STRATEGY. REACT + FRAMER MOTION ARCHITECTURE.</p>
-        <p className="opacity-50 text-cedar">ENGINEERED FOR EXPERT REVIEW.</p>
-     </div>
-  </footer>
-);
+export const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <footer className="border-t border-ink/10 mt-40 pb-20 pt-32 bg-white relative overflow-hidden">
+       <div className="absolute top-0 right-0 w-64 h-64 bg-cedar/5 rounded-full blur-3xl -mr-32 -mt-32" />
+
+       <div className="max-w-screen-2xl mx-auto px-8">
+         <div className="grid md:grid-cols-12 gap-16 mb-20">
+           <div className="md:col-span-6">
+             <div className="flex items-center gap-4 mb-8">
+               <Activity className="text-cedar w-8 h-8" />
+               <p className="font-display text-3xl font-light">Artisan Logic.</p>
+             </div>
+             <p className="font-sans-cn text-lg font-light opacity-60 leading-relaxed max-w-md">
+               透過深度使用者調研與資訊架構優化，為數位空間注入禪意與效率。本報告僅供專業評鑑使用。
+             </p>
+           </div>
+
+           <div className="md:col-span-6 flex flex-col md:items-end justify-between">
+             <button
+               onClick={scrollToTop}
+               className="group flex items-center gap-4 font-mono text-xs font-bold tracking-[0.4em] uppercase text-cedar hover:text-ink transition-colors"
+             >
+               Back to Top <ArrowUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+             </button>
+
+             <div className="mt-20 md:mt-0 flex flex-wrap gap-8 font-mono text-[10px] opacity-40 uppercase tracking-[0.2em]">
+               <span>Figma / Next.js / Framer Motion</span>
+               <span>Built by Jules // Expert UX Engineer</span>
+             </div>
+           </div>
+         </div>
+
+         <div className="border-t border-ink/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8 font-mono text-[9px] opacity-30 tracking-widest uppercase font-bold">
+            <p>© 2026 ZENSELECT STRATEGY. ALL RIGHTS RESERVED.</p>
+            <p>INTEGRATED RESEARCH & DESIGN ARCHITECTURE.</p>
+         </div>
+       </div>
+    </footer>
+  );
+};
