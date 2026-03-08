@@ -1,13 +1,30 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { 
-  Fingerprint, Activity, Network, Eye, GitCommitHorizontal, 
-  FileText, CheckCircle2, Target, Leaf, LayoutGrid, Wind, 
+import {
+  Fingerprint, Activity, Network, Eye, GitCommitHorizontal,
+  FileText, CheckCircle2, Target, Leaf, LayoutGrid, Wind,
   Search, Users, MessageSquare, PieChart, Layers, MousePointerClick,
   TrendingUp, HeartHandshake, CheckSquare, Wrench, Compass, Map as MapIcon
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+// Research Phase Charts
+import { CompetitorMatrix } from "@/components/charts/CompetitorMatrix";
+import { MarketTrendsChart } from "@/components/charts/MarketTrendsChart";
+import { SurveyResultsChart } from "@/components/charts/SurveyResultsChart";
+import { AffinityMap } from "@/components/charts/AffinityMap";
+
+// Define Phase Charts
+import { PersonaMatrix } from "@/components/charts/PersonaMatrix";
+import { EmotionalJourneyChart } from "@/components/charts/EmotionalJourneyChart";
+import { HMWMatrix } from "@/components/charts/HMWMatrix";
+
+// Design & Validation Phase Charts
+import { SUSGauge } from "@/components/charts/SUSGauge";
+import { UsabilityMatrix } from "@/components/charts/UsabilityMatrix";
+import { IterationChart } from "@/components/charts/IterationChart";
+import { DesignSystemMatrix } from "@/components/charts/DesignSystemMatrix";
 
 // --- Framer Motion Shared Variants ---
 const containerVariants: Variants = {
@@ -165,6 +182,7 @@ export default function CaseStudyPage() {
              <a href="#definition" className="hover:text-cedar transition-colors">02. Personas</a>
              <a href="#architecture" className="hover:text-cedar transition-colors">03. IA</a>
              <a href="#outcome" className="hover:text-cedar transition-colors">04. Metrics</a>
+             <a href="/prd" className="hover:opacity-100 transition-all text-cedar border border-cedar/40 px-3 py-1 opacity-100">PRD →</a>
           </nav>
         </div>
       </header>
@@ -335,6 +353,33 @@ export default function CaseStudyPage() {
             </motion.div>
           </div>
 
+          {/* ── Market Trends Chart ── */}
+          <motion.div variants={itemVariants} className="mb-16 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <div className="mb-6 flex items-center gap-4">
+              <TrendingUp className="w-5 h-5 text-cedar" />
+              <span className="font-mono text-sm font-bold tracking-widest text-cedar">市場趨勢數據 Market Trends Data</span>
+              <div className="flex-1 h-px bg-ink/10" />
+              <span className="font-mono text-[10px] text-ink/30 uppercase tracking-widest">W4–W5 // Discover Phase</span>
+            </div>
+            <MarketTrendsChart />
+          </motion.div>
+
+          {/* ── Survey Results Chart ── */}
+          <motion.div variants={itemVariants} className="mb-16 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <div className="mb-6 flex items-center gap-4">
+              <Users className="w-5 h-5 text-cedar" />
+              <span className="font-mono text-sm font-bold tracking-widest text-cedar">用戶訪談 & 問卷結果 Survey Results</span>
+              <div className="flex-1 h-px bg-ink/10" />
+              <span className="font-mono text-[10px] text-ink/30 uppercase tracking-widest">N=50+ // Quantitative</span>
+            </div>
+            <SurveyResultsChart />
+          </motion.div>
+
+          {/* ── Affinity Map ── */}
+          <motion.div variants={itemVariants} className="mb-16 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <AffinityMap />
+          </motion.div>
+
           {/* Expanded Interactive Matrix */}
           <motion.div variants={itemVariants} className="bg-white/30 border border-ink/10 backdrop-blur-md">
             <div className="bg-ink p-6 flex justify-between px-10 text-white items-center">
@@ -369,6 +414,16 @@ export default function CaseStudyPage() {
                 </AccordionItem>
               ))}
             </Accordion>
+          </motion.div>
+
+          {/* ── Competitor Matrix Visual ── */}
+          <motion.div variants={itemVariants} className="mt-10 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <div className="mb-6 flex items-center gap-4">
+              <PieChart className="w-5 h-5 text-cedar" />
+              <span className="font-mono text-sm font-bold tracking-widest text-cedar">競品量化矩陣 Competitive Scoring Matrix</span>
+              <div className="flex-1 h-px bg-ink/10" />
+            </div>
+            <CompetitorMatrix />
           </motion.div>
         </motion.section>
 
@@ -414,6 +469,27 @@ export default function CaseStudyPage() {
                 </div>
              </motion.div>
           </div>
+
+          {/* ── Persona Comparison Matrix ── */}
+          <motion.div variants={itemVariants} className="mb-16 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <div className="mb-6 flex items-center gap-4">
+              <Users className="w-5 h-5 text-cedar" />
+              <span className="font-mono text-sm font-bold tracking-widest text-cedar">Persona 屬性比較矩陣 Persona Comparison Matrix</span>
+              <div className="flex-1 h-px bg-ink/10" />
+              <span className="font-mono text-[10px] text-ink/30 uppercase tracking-widest">W6–W8 // Define Phase</span>
+            </div>
+            <PersonaMatrix />
+          </motion.div>
+
+          {/* ── Emotional Journey Chart ── */}
+          <motion.div variants={itemVariants} className="mb-16 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <EmotionalJourneyChart />
+          </motion.div>
+
+          {/* ── HMW Matrix ── */}
+          <motion.div variants={itemVariants} className="mb-16 bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <HMWMatrix />
+          </motion.div>
 
           {/* HMW Proposition */}
           <motion.div variants={itemVariants} className="bg-white/80 p-24 text-center border border-ink/5 shadow-sm">
@@ -471,6 +547,19 @@ export default function CaseStudyPage() {
                 </div>
              </motion.div>
           </div>
+        </motion.section>
+
+        {/* ── Design System Matrix ── */}
+        <motion.section variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-24 -mt-24">
+          <motion.div variants={itemVariants} className="bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <div className="mb-6 flex items-center gap-4">
+              <Layers className="w-5 h-5 text-cedar" />
+              <span className="font-mono text-sm font-bold tracking-widest text-cedar">設計系統覆蓋率矩陣 Design System Coverage Matrix</span>
+              <div className="flex-1 h-px bg-ink/10" />
+              <span className="font-mono text-[10px] text-ink/30 uppercase tracking-widest">W9–W10 // Design Phase</span>
+            </div>
+            <DesignSystemMatrix />
+          </motion.div>
         </motion.section>
 
         {/* 04 Outcomes / KPI */}
@@ -556,6 +645,39 @@ export default function CaseStudyPage() {
                </div>
             </motion.div>
           </div>
+        </motion.section>
+
+        {/* ── SUS Gauge + Usability Matrix + Iteration Chart ── */}
+        <motion.section variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-16 mb-32">
+          <div className="mb-10 flex items-center gap-4">
+            <span className="font-mono text-cedar text-sm font-bold tracking-widest">驗證階段數據儀表板 Validation Dashboard</span>
+            <div className="flex-1 h-px bg-ink/10" />
+            <span className="font-mono text-[10px] text-ink/30 uppercase tracking-widest">W9–W10 // Validation & Iteration</span>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-10 mb-16">
+            <motion.div variants={itemVariants} className="bg-white/60 border border-ink/5 p-10 shadow-sm">
+              <p className="font-mono text-xs text-cedar mb-6 font-bold tracking-widest flex items-center gap-2">
+                <Activity className="w-4 h-4" /> SUS Score Gauge
+              </p>
+              <SUSGauge score={78} />
+            </motion.div>
+            <motion.div variants={itemVariants} className="lg:col-span-2 bg-white/60 border border-ink/5 p-10 shadow-sm">
+              <p className="font-mono text-xs text-cedar mb-6 font-bold tracking-widest flex items-center gap-2">
+                <TrendingUp className="w-4 h-4" /> 迭代改善追蹤 Iteration Chart
+              </p>
+              <IterationChart />
+            </motion.div>
+          </div>
+
+          <motion.div variants={itemVariants} className="bg-white/30 border border-ink/10 p-10 backdrop-blur-md">
+            <div className="mb-6 flex items-center gap-4">
+              <CheckSquare className="w-5 h-5 text-cedar" />
+              <span className="font-mono text-sm font-bold tracking-widest text-cedar">可用性測試完整結果矩陣 Usability Test Results Matrix</span>
+              <div className="flex-1 h-px bg-ink/10" />
+            </div>
+            <UsabilityMatrix />
+          </motion.div>
         </motion.section>
 
         {/* 05 Portfolio Strategy (Meta) */}
