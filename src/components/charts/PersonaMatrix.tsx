@@ -143,7 +143,7 @@ export function PersonaMatrix() {
       </div>
 
       <p className="font-mono text-[9px] text-ink/30 mt-3">
-        基於 50+ 用戶訪談歸納 · Personas represent archetypes of ZenSelect's primary user segments
+        基於 50+ 用戶訪談歸納 · Personas represent archetypes of ZenSelect&apos;s primary user segments
       </p>
     </div>
   );

@@ -33,10 +33,9 @@ function scoreToAngle(score: number) {
   return START_ANGLE + (score / 100) * RANGE;
 }
 
-export function SUSGauge({ score = 78, label = "ZenSelect Current" }: SUSGaugeProps) {
+export function SUSGauge({ score = 78 }: SUSGaugeProps) {
   const scoreAngle = scoreToAngle(score);
   const avgAngle = scoreToAngle(UX_BENCHMARKS.susIndustryAvg);
-  const goodAngle = scoreToAngle(UX_BENCHMARKS.susGood);
   const targetAngle = scoreToAngle(85);
 
   const zones = [

@@ -3,9 +3,9 @@
 import { motion, Variants } from "framer-motion";
 import {
   FileText, Target, Users, Activity, CheckCircle2, AlertTriangle,
-  TrendingUp, Shield, Layers, Smartphone, Clock, Star
+  TrendingUp, Shield, Layers, Smartphone, Star
 } from "lucide-react";
-import { MARKET_DATA, UX_BENCHMARKS, USABILITY_RESULTS } from "@/data/research-data";
+import { MARKET_DATA } from "@/data/research-data";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -368,7 +368,7 @@ export default function PRDPage() {
                 painPoints: ["難尋環保兼具美感的平台", "漂綠資訊難辨真偽", "資訊過於碎片化"],
                 color: "#5A8A5A",
               },
-            ].map((persona, i) => (
+            ].map((persona) => (
               <motion.div
                 key={persona.name}
                 variants={fadeUp}
@@ -604,7 +604,7 @@ export default function PRDPage() {
                   "671% ROI（Forrester 設計系統效益基準）",
                 ],
               },
-            ].map((req, i) => (
+            ].map((req) => (
               <motion.div
                 key={req.title}
                 variants={fadeUp}
@@ -672,7 +672,7 @@ export default function PRDPage() {
                   "所有動畫緩動曲線使用 easeInOut（呼吸感）",
                 ],
               },
-            ].map((p, i) => (
+            ].map((p) => (
               <motion.div
                 key={p.num}
                 variants={fadeUp}
@@ -737,7 +737,7 @@ export default function PRDPage() {
                 gate: "Final Delivery ✓",
                 highlight: true,
               },
-            ].map((phase, i) => (
+            ].map((phase) => (
               <motion.div
                 key={phase.weeks}
                 variants={fadeUp}
