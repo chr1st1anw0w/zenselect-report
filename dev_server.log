@@ -1,0 +1,15 @@
+
+> zenselect-report@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1674ms
+ ○ Compiling / ...
+ ✓ Compiled / in 11.6s (1544 modules)
+ GET / 200 in 12571ms
+ ✓ Compiled in 1186ms (769 modules)
+ ✓ Compiled in 1070ms (1517 modules)
+ GET / 200 in 363ms
