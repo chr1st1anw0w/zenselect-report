@@ -45,7 +45,7 @@ export function IterationChart() {
   return (
     <div className="w-full">
       <div className="mb-6">
-        <p className="font-mono text-xs text-cedar font-bold tracking-widest uppercase mb-1">
+        <p className="font-mono text-xs text-accent font-bold tracking-widest uppercase mb-1">
           迭代改善追蹤 Iteration Improvement Tracking
         </p>
         <p className="font-mono text-[10px] text-ink/40">
@@ -53,7 +53,7 @@ export function IterationChart() {
         </p>
       </div>
 
-      <div className="bg-white/60 border border-ink/5 p-6 overflow-x-auto">
+      <div className="glass-card border border-ink/5 p-6 overflow-x-auto">
         <svg viewBox={`0 0 ${CHART_W} ${CHART_H + 20}`} className="w-full" style={{ minWidth: 400 }}>
           {/* Grid */}
           {[0, 0.25, 0.5, 0.75, 1].map((pct) => (
@@ -195,7 +195,7 @@ export function IterationChart() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="bg-white/60 border-t-4 p-4"
+              className="glass-card border-t-4 p-4"
               style={{ borderColor: s.color }}
             >
               <p className="font-mono text-[9px] text-ink/40 mb-1">{s.metricCN}</p>

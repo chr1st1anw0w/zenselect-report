@@ -60,7 +60,7 @@ export function UsabilityMatrix() {
             <th className="text-center p-4 font-bold tracking-widest border-r border-white/10">基準 Baseline</th>
             <th className="text-center p-4 font-bold tracking-widest border-r border-white/10">R1</th>
             <th className="text-center p-4 font-bold tracking-widest border-r border-white/10">R2</th>
-            <th className="text-center p-4 font-bold tracking-widest border-r border-white/10 text-cedar">最終 Final</th>
+            <th className="text-center p-4 font-bold tracking-widest border-r border-white/10 text-accent">最終 Final</th>
             <th className="text-center p-4 font-bold tracking-widest border-r border-white/10">業界均值 Avg</th>
             <th className="text-center p-4 font-bold tracking-widest border-r border-white/10">目標 Target</th>
             <th className="text-center p-4 font-bold tracking-widest border-r border-white/10">趨勢 Trend</th>
@@ -80,7 +80,7 @@ export function UsabilityMatrix() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08, duration: 0.5 }}
-                className={i % 2 === 0 ? "bg-white/60" : "bg-canvas/60"}
+                className={i % 2 === 0 ? "glass-card" : "bg-stone/60"}
               >
                 <td className="p-4 border-r border-ink/5">
                   <div className="font-bold text-ink">{row.metric}</div>
@@ -96,10 +96,10 @@ export function UsabilityMatrix() {
                   {row.round2}{row.unit}
                 </td>
                 <td className="p-4 border-r border-ink/5 text-center">
-                  <div className="font-bold text-cedar text-base">{row.final}{row.unit}</div>
+                  <div className="font-bold text-accent text-base">{row.final}{row.unit}</div>
                   <div className="mt-1.5 h-1.5 bg-ink/10 w-full">
                     <motion.div
-                      className="h-full bg-cedar"
+                      className="h-full bg-accent"
                       initial={{ width: 0 }}
                       whileInView={{ width: `${barFinalPct}%` }}
                       viewport={{ once: true }}

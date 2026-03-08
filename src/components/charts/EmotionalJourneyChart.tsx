@@ -44,7 +44,7 @@ export function EmotionalJourneyChart() {
   return (
     <div className="w-full">
       <div className="mb-6">
-        <p className="font-mono text-xs text-cedar font-bold tracking-widest uppercase mb-1">
+        <p className="font-mono text-xs text-accent font-bold tracking-widest uppercase mb-1">
           使用者旅程情感弧線 Emotional Journey Arc
         </p>
         <p className="font-mono text-[10px] text-ink/40">
@@ -52,7 +52,7 @@ export function EmotionalJourneyChart() {
         </p>
       </div>
 
-      <div className="bg-white/60 border border-ink/5 p-6 overflow-x-auto">
+      <div className="glass-card border border-ink/5 p-6 overflow-x-auto">
         <svg viewBox={`0 0 ${CHART_W} ${CHART_H + 80}`} className="w-full" style={{ minWidth: 500 }}>
           {/* Grid horizontal lines */}
           {[2, 4, 6, 8, 10].map((v) => (
@@ -195,7 +195,7 @@ export function EmotionalJourneyChart() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="bg-white/60 border-l-4 p-4"
+            className="glass-card border-l-4 p-4"
             style={{ borderColor: ins.color }}
           >
             <p className="font-sans-cn text-xs font-bold text-ink mb-1">{ins.insight}</p>

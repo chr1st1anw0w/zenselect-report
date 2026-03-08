@@ -20,7 +20,7 @@ export function HMWMatrix() {
   return (
     <div className="w-full">
       <div className="mb-6">
-        <p className="font-mono text-xs text-cedar font-bold tracking-widest uppercase mb-1">
+        <p className="font-mono text-xs text-accent font-bold tracking-widest uppercase mb-1">
           HMW 核心機會矩陣 How Might We Opportunity Matrix
         </p>
         <p className="font-mono text-[10px] text-ink/40">
@@ -29,7 +29,7 @@ export function HMWMatrix() {
       </div>
 
       {/* 2x2 visual matrix */}
-      <div className="relative bg-white/60 border border-ink/5 p-6 mb-6" style={{ minHeight: 340 }}>
+      <div className="relative glass-card border border-ink/5 p-6 mb-6" style={{ minHeight: 340 }}>
         {/* Axis labels */}
         <div className="absolute top-1/2 -translate-y-1/2 -left-2 font-mono text-[9px] text-ink/30 tracking-widest uppercase rotate-[-90deg] origin-center whitespace-nowrap">
           ← Low Impact · High Impact →
@@ -60,8 +60,8 @@ export function HMWMatrix() {
           </div>
 
           {/* Top-right: High Impact, High Effort = Strategic */}
-          <div className="border border-cedar/30 bg-cedar/5 p-4 min-h-[120px]">
-            <p className="font-mono text-[10px] font-bold text-cedar mb-3 tracking-widest">🎯 STRATEGIC</p>
+          <div className="border border-accent/30 bg-accent/5 p-4 min-h-[120px]">
+            <p className="font-mono text-[10px] font-bold text-accent mb-3 tracking-widest">🎯 STRATEGIC</p>
             <p className="font-mono text-[9px] text-ink/30 mb-3">High Impact / High Effort</p>
             {quadrantMap["Strategic"].map((item) => (
               <motion.div
@@ -70,9 +70,9 @@ export function HMWMatrix() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: item.id * 0.07 }}
-                className="text-xs font-sans-cn text-ink/80 bg-white border border-cedar/30 p-2 mb-2 shadow-sm"
+                className="text-xs font-sans-cn text-ink/80 bg-white border border-accent/30 p-2 mb-2 shadow-sm"
               >
-                <span className="font-mono text-[8px] text-cedar mr-1">HMW{item.id}.</span>
+                <span className="font-mono text-[8px] text-accent mr-1">HMW{item.id}.</span>
                 {item.statement}
               </motion.div>
             ))}
@@ -123,17 +123,17 @@ export function HMWMatrix() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.05 }}
-                  className="border-b border-ink/5 hover:bg-white/60 transition-colors"
+                  className="border-b border-ink/5 hover:glass-card transition-colors"
                 >
                   <td className="p-3 border border-ink/5 text-ink/40">HMW{item.id}</td>
                   <td className="p-3 border border-ink/5 font-sans-cn text-xs text-ink/80">{item.statement}</td>
                   <td className="p-3 border border-ink/5 text-center">
                     <div className="flex justify-center">
                       {Array.from({ length: 10 }).map((_, j) => (
-                        <div key={j} className={`w-1.5 h-3 mx-px ${j < item.impact ? "bg-cedar" : "bg-ink/10"}`} />
+                        <div key={j} className={`w-1.5 h-3 mx-px ${j < item.impact ? "bg-accent" : "bg-ink/10"}`} />
                       ))}
                     </div>
-                    <span className="text-cedar font-bold">{item.impact}/10</span>
+                    <span className="text-accent font-bold">{item.impact}/10</span>
                   </td>
                   <td className="p-3 border border-ink/5 text-center">
                     <div className="flex justify-center">

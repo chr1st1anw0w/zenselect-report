@@ -4,7 +4,7 @@ import "./globals.css";
 
 const display = Inter({ 
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["300", "400", "500", "600"],
   variable: "--font-display",
 });
 
@@ -21,8 +21,8 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Expert UX Intelligence: ZenSelect",
-  description: "Strategic e-commerce UI/UX analysis report.",
+  title: "ZenSelect | Luxury UI/UX Analytics",
+  description: "Wabi-Sabi inspired strategic e-commerce analysis report.",
 };
 
 export default function RootLayout({
@@ -32,7 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW" className={`${display.variable} ${sansCn.variable} ${mono.variable}`}>
-      <body className="blueprint-grid font-sans-cn tracking-wide">{children}</body>
+      <body className="font-display tracking-tight bg-sand min-h-screen text-ink overflow-x-hidden">
+        {children}
+      </body>
     </html>
   );
 }

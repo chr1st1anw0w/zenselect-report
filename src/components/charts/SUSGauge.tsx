@@ -33,10 +33,9 @@ function scoreToAngle(score: number) {
   return START_ANGLE + (score / 100) * RANGE;
 }
 
-export function SUSGauge({ score = 78, label = "ZenSelect Current" }: SUSGaugeProps) {
+export function SUSGauge({ score = 78 }: SUSGaugeProps) {
   const scoreAngle = scoreToAngle(score);
   const avgAngle = scoreToAngle(UX_BENCHMARKS.susIndustryAvg);
-  const goodAngle = scoreToAngle(UX_BENCHMARKS.susGood);
   const targetAngle = scoreToAngle(85);
 
   const zones = [
@@ -70,7 +69,7 @@ export function SUSGauge({ score = 78, label = "ZenSelect Current" }: SUSGaugePr
         <motion.path
           d={arcPath(CX, CY, ARC_RADIUS, START_ANGLE, scoreAngle)}
           fill="none"
-          stroke="#8B7355"
+          stroke="#FF7A1A"
           strokeWidth={STROKE_W}
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
@@ -103,7 +102,7 @@ export function SUSGauge({ score = 78, label = "ZenSelect Current" }: SUSGaugePr
           y1={CY}
           x2={CX}
           y2={CY}
-          stroke="#8B7355"
+          stroke="#FF7A1A"
           strokeWidth={2.5}
           strokeLinecap="round"
           animate={{ x2: needleTip.x, y2: needleTip.y }}
@@ -112,10 +111,10 @@ export function SUSGauge({ score = 78, label = "ZenSelect Current" }: SUSGaugePr
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         />
-        <circle cx={CX} cy={CY} r={5} fill="#8B7355" />
+        <circle cx={CX} cy={CY} r={5} fill="#FF7A1A" />
 
         {/* Score text */}
-        <text x={CX} y={CY + 28} textAnchor="middle" fontSize={32} fontWeight="300" fill="#8B7355" fontFamily="'Playfair Display', Georgia, serif">
+        <text x={CX} y={CY + 28} textAnchor="middle" fontSize={32} fontWeight="300" fill="#FF7A1A" fontFamily="'Playfair Display', Georgia, serif">
           {score}
         </text>
         <text x={CX} y={CY + 42} textAnchor="middle" fontSize={9} fill="#1C1A18" fillOpacity={0.5} fontFamily="JetBrains Mono, monospace" fontWeight="bold">
@@ -125,7 +124,7 @@ export function SUSGauge({ score = 78, label = "ZenSelect Current" }: SUSGaugePr
 
       <div className="w-full mt-4 space-y-2 font-mono text-[10px]">
         {[
-          { label: "ZenSelect (Current)", value: score, color: "#8B7355", bold: true },
+          { label: "ZenSelect (Current)", value: score, color: "#FF7A1A", bold: true },
           { label: "Industry Average", value: UX_BENCHMARKS.susIndustryAvg, color: "#1C1A18", bold: false },
           { label: "Target (Good Threshold)", value: 85, color: "#5A8A5A", bold: false },
         ].map((item) => (

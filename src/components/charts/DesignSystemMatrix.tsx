@@ -15,22 +15,22 @@ export function DesignSystemMatrix() {
         className="bg-ink text-canvas p-6 mb-6 flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <div>
-          <p className="font-mono text-xs text-cedar font-bold tracking-widest mb-1">DESIGN SYSTEM ROI</p>
+          <p className="font-mono text-xs text-accent font-bold tracking-widest mb-1">DESIGN SYSTEM ROI</p>
           <p className="font-sans-cn text-sm text-canvas/70">建立設計系統的投資回報 · Based on Forrester/Etsy benchmark</p>
         </div>
         <div className="flex gap-8 text-center">
           <div>
-            <p className="font-display text-4xl font-light text-cedar">{UX_BENCHMARKS.designSystemROI}%</p>
+            <p className="font-display text-4xl font-light text-accent">{UX_BENCHMARKS.designSystemROI}%</p>
             <p className="font-mono text-[9px] text-white/40 uppercase tracking-wider">3-Year ROI</p>
           </div>
           <div className="w-px bg-white/10" />
           <div>
-            <p className="font-display text-4xl font-light text-cedar">-35%</p>
+            <p className="font-display text-4xl font-light text-accent">-35%</p>
             <p className="font-mono text-[9px] text-white/40 uppercase tracking-wider">Dev Cost Reduction</p>
           </div>
           <div className="w-px bg-white/10" />
           <div>
-            <p className="font-display text-4xl font-light text-cedar">+38%</p>
+            <p className="font-display text-4xl font-light text-accent">+38%</p>
             <p className="font-mono text-[9px] text-white/40 uppercase tracking-wider">Design Efficiency</p>
           </div>
         </div>
@@ -55,21 +55,21 @@ export function DesignSystemMatrix() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05, duration: 0.4 }}
-                className={`border-b border-ink/5 ${i % 2 === 0 ? "bg-white/60" : "bg-canvas/40"} hover:bg-white transition-colors`}
+                className={`border-b border-ink/5 ${i % 2 === 0 ? "glass-card" : "bg-stone/40"} hover:bg-white transition-colors`}
               >
                 <td className="p-3 border-r border-ink/5 font-bold text-ink">{comp.component}</td>
                 <td className="p-3 border-r border-ink/5">
                   <div className="flex items-center gap-2">
                     <div className="flex-1 h-2 bg-ink/10">
                       <motion.div
-                        className={`h-full ${comp.coverage === 100 ? "bg-sage" : comp.coverage >= 85 ? "bg-cedar" : "bg-amber-400"}`}
+                        className={`h-full ${comp.coverage === 100 ? "bg-sage" : comp.coverage >= 85 ? "bg-accent" : "bg-amber-400"}`}
                         initial={{ width: 0 }}
                         whileInView={{ width: `${comp.coverage}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: i * 0.05 }}
                       />
                     </div>
-                    <span className={`font-bold text-[10px] w-8 text-right ${comp.coverage === 100 ? "text-sage" : "text-cedar"}`}>
+                    <span className={`font-bold text-[10px] w-8 text-right ${comp.coverage === 100 ? "text-sage" : "text-accent"}`}>
                       {comp.coverage}%
                     </span>
                   </div>

@@ -5,7 +5,7 @@ import { PERSONA_DATA } from "@/data/research-data";
 
 const DeviceBar = ({ mobile, desktop }: { mobile: number; desktop: number }) => (
   <div className="flex h-3 w-full overflow-hidden">
-    <div className="h-full bg-cedar transition-all" style={{ width: `${mobile}%` }} title={`Mobile ${mobile}%`} />
+    <div className="h-full bg-accent transition-all" style={{ width: `${mobile}%` }} title={`Mobile ${mobile}%`} />
     <div className="h-full bg-ink/20 transition-all" style={{ width: `${desktop}%` }} title={`Desktop ${desktop}%`} />
   </div>
 );
@@ -78,7 +78,7 @@ export function PersonaMatrix() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: ri * 0.07, duration: 0.4 }}
-            className={`grid grid-cols-4 border-b border-ink/5 ${ri % 2 === 0 ? "bg-white/60" : "bg-canvas/60"}`}
+            className={`grid grid-cols-4 border-b border-ink/5 ${ri % 2 === 0 ? "glass-card" : "bg-stone/60"}`}
           >
             <div className="p-4 font-mono text-[10px] font-bold text-ink/60 tracking-wider border-r border-ink/5 flex items-center">
               {row.label}
@@ -122,7 +122,7 @@ export function PersonaMatrix() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="grid grid-cols-4 bg-canvas/40"
+          className="grid grid-cols-4 bg-stone/40"
         >
           <div className="p-4 font-mono text-[10px] font-bold text-ink/60 tracking-wider border-r border-ink/5 flex items-center">
             永續 & Tech 分數
@@ -143,7 +143,7 @@ export function PersonaMatrix() {
       </div>
 
       <p className="font-mono text-[9px] text-ink/30 mt-3">
-        基於 50+ 用戶訪談歸納 · Personas represent archetypes of ZenSelect's primary user segments
+        基於 50+ 用戶訪談歸納 · Personas represent archetypes of ZenSelect&apos;s primary user segments
       </p>
     </div>
   );

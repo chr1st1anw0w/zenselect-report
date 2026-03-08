@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { COMPETITOR_DATA } from "@/data/research-data";
 
 const Star = ({ filled }: { filled: boolean }) => (
-  <span className={filled ? "text-cedar" : "text-ink/20"}>★</span>
+  <span className={filled ? "text-accent" : "text-ink/20"}>★</span>
 );
 
-const ScoreBar = ({ value, max = 5, highlight }: { value: number; max?: number; highlight: boolean }) => (
+const ScoreBar = ({ value, max = 5 }: { value: number; max?: number }) => (
   <div className="flex gap-1">
     {Array.from({ length: max }).map((_, i) => (
       <Star key={i} filled={i < value} />
@@ -41,18 +41,18 @@ export function CompetitorMatrix() {
               transition={{ delay: i * 0.08, duration: 0.5 }}
               className={
                 comp.highlight
-                  ? "bg-cedar/10 border-l-4 border-cedar"
+                  ? "bg-accent/10 border-l-4 border-accent"
                   : i % 2 === 0
-                  ? "bg-white/60"
-                  : "bg-white/30"
+                  ? "glass-card"
+                  : "bg-white/40 backdrop-blur-sm"
               }
             >
               <td className="p-4 border-r border-ink/5">
-                <span className={`font-bold text-sm ${comp.highlight ? "text-cedar" : "text-ink"}`}>
+                <span className={`font-bold text-sm ${comp.highlight ? "text-accent" : "text-ink"}`}>
                   {comp.name}
                 </span>
                 {comp.highlight && (
-                  <span className="ml-2 bg-cedar text-white text-[9px] px-2 py-0.5 font-bold tracking-widest uppercase">
+                  <span className="ml-2 bg-accent text-white text-[9px] px-2 py-0.5 font-bold tracking-widest uppercase">
                     TARGET
                   </span>
                 )}
@@ -62,7 +62,7 @@ export function CompetitorMatrix() {
                 <span
                   className={`px-2 py-1 text-[10px] font-bold tracking-wider ${
                     comp.tier === "Premium"
-                      ? "bg-cedar/20 text-cedar"
+                      ? "bg-accent/20 text-accent"
                       : comp.tier === "Mid-Premium"
                       ? "bg-sage/20 text-sage"
                       : comp.tier === "Mid"
@@ -75,17 +75,17 @@ export function CompetitorMatrix() {
               </td>
               <td className="p-4 border-r border-ink/5 text-ink/70">{comp.designStyle}</td>
               <td className="p-4 border-r border-ink/5 text-center">
-                <ScoreBar value={comp.storytelling} highlight={comp.highlight} />
+                <ScoreBar value={comp.storytelling} />
               </td>
               <td className="p-4 border-r border-ink/5 text-center">
-                <ScoreBar value={comp.sustainability} highlight={comp.highlight} />
+                <ScoreBar value={comp.sustainability} />
               </td>
               <td className="p-4 border-r border-ink/5 text-center">
                 <div className="relative w-full">
-                  <div className="text-sm font-bold text-cedar mb-1">{comp.uxScore}</div>
+                  <div className="text-sm font-bold text-accent mb-1">{comp.uxScore}</div>
                   <div className="h-1.5 bg-ink/10 w-full">
                     <motion.div
-                      className="h-full bg-cedar"
+                      className="h-full bg-accent"
                       initial={{ width: 0 }}
                       whileInView={{ width: `${comp.uxScore}%` }}
                       viewport={{ once: true }}

@@ -8,7 +8,7 @@ export function SurveyResultsChart() {
     <div className="w-full space-y-4">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <p className="font-mono text-xs text-cedar font-bold tracking-widest uppercase">
+          <p className="font-mono text-xs text-accent font-bold tracking-widest uppercase">
             用戶訪談 & 問卷調查結果
           </p>
           <p className="font-mono text-[10px] text-ink/40 mt-1">
@@ -37,7 +37,7 @@ export function SurveyResultsChart() {
             <p className="font-sans-cn text-xs font-medium text-ink/80 leading-tight max-w-[70%]">
               {item.label}
             </p>
-            <span className="font-mono text-sm font-bold text-cedar">{item.value}%</span>
+            <span className="font-mono text-sm font-bold text-accent">{item.value}%</span>
           </div>
           <div className="relative h-6 bg-ink/5">
             {/* Benchmark line */}
@@ -53,13 +53,13 @@ export function SurveyResultsChart() {
             )}
             {/* Value bar */}
             <motion.div
-              className="h-full bg-cedar relative"
+              className="h-full bg-accent relative"
               initial={{ width: 0 }}
               whileInView={{ width: `${item.value}%` }}
               viewport={{ once: true }}
               transition={{ duration: 1.0, delay: i * 0.07 + 0.2, ease: "easeOut" }}
             >
-              <div className="absolute inset-y-0 right-0 w-1 bg-cedar/60" />
+              <div className="absolute inset-y-0 right-0 w-1 bg-accent/60" />
             </motion.div>
           </div>
           <p className="font-mono text-[9px] text-ink/30 mt-1 truncate">{item.labelEN}</p>

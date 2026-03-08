@@ -56,9 +56,9 @@ export function MarketTrendsChart() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
-            className="bg-canvas border border-ink/10 p-5"
+            className="bg-stone border border-ink/10 p-5"
           >
-            <p className="text-3xl font-display text-cedar font-light mb-1">{stat.value}</p>
+            <p className="text-3xl font-display text-accent font-light mb-1">{stat.value}</p>
             <p className="font-sans-cn text-xs font-bold text-ink mb-1">{stat.label}</p>
             <p className="font-mono text-[9px] text-ink/40 uppercase tracking-wider">{stat.sub}</p>
             <p className="font-mono text-[9px] text-sage mt-2">{stat.delta}</p>
@@ -67,7 +67,7 @@ export function MarketTrendsChart() {
       </div>
 
       {/* Grouped Bar Chart */}
-      <div className="bg-white/60 border border-ink/5 p-8">
+      <div className="glass-card border border-ink/5 p-8">
         <p className="font-mono text-xs text-ink/40 mb-6 tracking-widest font-bold uppercase">
           市場趨勢圖 Market Growth Trends (2022–2032P)
         </p>
@@ -180,7 +180,7 @@ export function MarketTrendsChart() {
         {/* Legend */}
         <div className="flex flex-wrap gap-6 mt-4 font-mono text-[10px] text-ink/60">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-cedar" />
+            <div className="w-3 h-3 bg-accent" />
             <span>家居市場規模 (USD B) — max: $2B</span>
           </div>
           <div className="flex items-center gap-2">

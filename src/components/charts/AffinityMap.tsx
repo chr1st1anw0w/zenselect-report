@@ -7,7 +7,7 @@ export function AffinityMap() {
   return (
     <div className="w-full">
       <div className="mb-6">
-        <p className="font-mono text-xs text-cedar font-bold tracking-widest uppercase mb-1">
+        <p className="font-mono text-xs text-accent font-bold tracking-widest uppercase mb-1">
           親和圖整理 Affinity Map
         </p>
         <p className="font-mono text-[10px] text-ink/40">
@@ -46,7 +46,7 @@ export function AffinityMap() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: ci * 0.12 + ii * 0.06, duration: 0.4 }}
-                  className="flex items-start gap-2 p-2 bg-white shadow-sm border border-ink/5 hover:border-cedar/30 transition-colors"
+                  className="flex items-start gap-2 p-2 bg-white shadow-sm border border-ink/5 hover:border-accent/30 transition-colors"
                   style={{ borderLeft: `3px solid ${cluster.color}40` }}
                 >
                   <span
