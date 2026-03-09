@@ -1,6 +1,7 @@
 "use client";
 
 import { Header, Footer } from "@/components/case-study/layout";
+import { MindMap } from "@/components/case-study/mind-map";
 import { 
   Hero,
   Process,
@@ -25,6 +26,7 @@ export default function CaseStudyPage() {
         <Hero />
         <Process />
         <Discovery />
+        <MindMap />
         <Persona />
         <Architecture />
         <Outcome />

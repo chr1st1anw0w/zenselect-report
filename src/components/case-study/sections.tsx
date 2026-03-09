@@ -69,7 +69,7 @@ const hoverScale: Variants = {
 };
 
 export const ResearchMethodology = () => (
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 md:p-12">
+  <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-4 gap-6 mb-20 md:p-12 pb-8 scrollbar-thin scrollbar-thumb-cedar/20 scrollbar-track-transparent">
     {[
       { label: "Qualitative", value: "50", sub: "Deep Interviews", icon: <MessageSquare className="w-5 h-5 text-cedar"/>, detail: "1-on-1 sessions exploring emotional triggers." },
       { label: "Quantitative", value: "500+", sub: "Survey Respondents", icon: <BarChart3 className="w-5 h-5 text-cedar"/>, detail: "Market validation across demographics." },
@@ -83,7 +83,7 @@ export const ResearchMethodology = () => (
         viewport={{ once: true }}
         transition={{ delay: i * 0.15 }}
         whileHover={{ scale: 1.05, borderColor: "#8B7355", boxShadow: "0 20px 40px rgba(0,0,0,0.05)" }}
-        className="bg-white border border-ink/5 p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 group"
+        className="snap-center flex-shrink-0 w-[280px] md:w-auto bg-white border border-ink/5 p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 group"
       >
         <div className="p-4 bg-canvas rounded-lg mb-6 group-hover:bg-cedar/10 transition-colors">
           {item.icon}
@@ -133,7 +133,6 @@ export const SentimentAnalysis = () => (
 );
 
 export const Hero = () => {
-  const { lang } = useLanguage();
   return (
   <motion.section
     variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
@@ -234,7 +233,7 @@ export const Process = () => {
 
     <div className="relative">
       <div className="absolute top-1/2 left-0 right-0 h-px bg-ink/5 -translate-y-1/2 hidden lg:block" />
-      <div className="grid lg:grid-cols-5 gap-6 md:p-10">
+      <div className="flex overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-5 gap-6 md:p-10 pb-12 scrollbar-thin scrollbar-thumb-cedar/20 scrollbar-track-transparent">
         {[
           { id: "W1-W3", title: "研究階段", sub: "Discover", icon: <Search className="w-4 h-4"/>, tasks: ["市場競品分析", "深度訪談 (N=50+)", "親和圖 (Affinity Map)"] },
           { id: "W4-W5", title: "定義階段", sub: "Define", icon: <Target className="w-4 h-4"/>, tasks: ["Persona 建立", "體驗旅程 (Journey Map)", "HMW 核心機會點"] },
@@ -250,7 +249,7 @@ export const Process = () => {
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1 }}
             whileHover={{ y: -15, scale: 1.02 }}
-            className="relative group cursor-default"
+            className="snap-center flex-shrink-0 w-[300px] md:w-auto relative group cursor-default"
           >
             <div className={`h-full p-4 md:p-8 border transition-all duration-700 ${phase.highlight ? 'bg-ink text-canvas border-ink shadow-2xl scale-105 z-20' : 'bg-white border-ink/10 hover:border-cedar/50 hover:shadow-xl'}`}>
               <div className="flex items-center justify-between mb-6">
@@ -281,6 +280,9 @@ export const Process = () => {
             )}
           </motion.div>
         ))}
+      </div>
+      <div className="flex lg:hidden justify-center mt-8 gap-2 font-mono text-[10px] text-cedar/40 uppercase tracking-widest">
+        <ArrowRight className="w-3 h-3" /> Scroll to view project timeline
       </div>
     </div>
   </motion.section>
@@ -944,7 +946,7 @@ export const Outcome = () => {
                  <div className="h-1.5 bg-ink/5 rounded-full overflow-hidden">
                    <motion.div
                      className="h-full bg-cedar"
-                     initial={{ width: 0 }}
+                     initial={{ opacity: 0 }}
                      whileInView={{ width: m.val.includes('/') ? (parseInt(m.val.split('/')[0])/parseInt(m.val.split('/')[1]))*100 + '%' : m.val }}
                      viewport={{ once: true }}
                      transition={{ duration: 1.5, delay: i * 0.2 + j * 0.1, ease: "circOut" }}

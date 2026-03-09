@@ -1,11 +1,11 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   TrendingUp, Sparkles,
   Target, Users, Zap,
-  Heart, Eye, Search, ShoppingBag, Star as StarIcon
+  Heart
 } from "lucide-react";
 import { JOURNEY_POINTS, COMPETITOR_DATA, HMW_STATEMENTS } from "@/data/research-data";
 import { useLanguage } from "@/context/language-context";
@@ -510,14 +510,14 @@ export const MarketInsightGrid = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-3 gap-8 mb-20 md:p-8">
+    <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-8 mb-20 md:p-8 pb-10 scrollbar-thin scrollbar-thumb-cedar/20 scrollbar-track-transparent">
       {insights.map((item, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ delay: i * 0.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           whileHover={{ y: -10, transition: { duration: 0.4 } }}
-          className="bg-white border border-ink/5 p-8 shadow-sm hover:shadow-2xl transition-all duration-500 group relative overflow-hidden"
+          className="snap-center flex-shrink-0 w-[320px] md:w-auto bg-white border border-ink/5 p-8 shadow-sm hover:shadow-2xl transition-all duration-500 group relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-24 h-24 bg-cedar/5 rounded-bl-full -mr-12 -mt-12 transition-transform group-hover:scale-150 duration-700" />
 
