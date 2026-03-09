@@ -1,4 +1,8 @@
 "use client";
+import { PersonaMatrix } from "./PersonaMatrix";
+import { EmotionalJourneyChart } from "./EmotionalJourneyChart";
+import { SUSGauge } from "./SUSGauge";
+import GlassCard from "@/components/ui/GlassCard";
 
 import { motion, Variants } from "framer-motion";
 import {
@@ -83,9 +87,9 @@ export const ResearchMethodology = () => (
         viewport={{ once: true }}
         transition={{ delay: i * 0.15 }}
         whileHover={{ scale: 1.05, borderColor: "#8B7355", boxShadow: "0 20px 40px rgba(0,0,0,0.05)" }}
-        className="bg-white border border-ink/5 p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 group"
+        className="glass-card bg-white/20 border border-white/20 p-8 flex flex-col items-center text-center shadow-sm transition-all duration-300 group rounded-[40px]"
       >
-        <div className="p-4 bg-canvas rounded-lg mb-6 group-hover:bg-cedar/10 transition-colors">
+        <div className="p-4 bg-canvas rounded-2xl mb-6 group-hover:bg-cedar/10 transition-colors">
           {item.icon}
         </div>
         <p className="text-5xl font-display text-ink mb-2 group-hover:text-cedar transition-colors">{item.value}</p>
@@ -98,7 +102,7 @@ export const ResearchMethodology = () => (
 );
 
 export const SentimentAnalysis = () => (
-  <motion.div variants={itemVariants} className="mt-20 bg-white border border-ink/5 p-6 md:p-12 shadow-sm">
+  <motion.div variants={itemVariants} className="mt-20 glass-card bg-white/20 border border-white/20 p-6 md:p-12 shadow-sm rounded-[40px]">
     <div className="flex items-center gap-4 mb-12">
       <Brain className="w-6 h-6 text-cedar" />
       <h4 className="font-mono text-sm text-cedar font-bold tracking-[0.3em] uppercase">Qualitative Sentiment Analysis</h4>
@@ -153,7 +157,7 @@ export const Hero = () => {
           <span className="text-cedar italic">Logic.</span>
         </h1>
         <div className="relative">
-          <p className="text-lg md:text-xl font-sans-cn leading-relaxed text-ink/90 max-w-3xl border-l-4 border-cedar pl-8 py-6 bg-white/50 backdrop-blur-md shadow-sm">
+          <p className="text-lg md:text-xl font-sans-cn leading-relaxed text-ink/90 max-w-3xl border-l-4 border-cedar pl-8 py-6 glass-card bg-white/20 backdrop-blur-md shadow-sm rounded-r-[40px]">
             透過數據與資訊架構轉化感性——<br/>
             <span className="text-cedar font-medium">將「間 (Ma)」之哲學編碼為具備高商業轉換效率的數位選品空間。</span>
           </p>
@@ -190,7 +194,7 @@ export const Hero = () => {
       </motion.div>
 
       <motion.div variants={itemVariants} className="lg:col-span-4">
-        <div className="bg-ink p-4 md:p-8 md:p-6 md:p-12 text-canvas shadow-2xl relative overflow-hidden group">
+        <div className="bg-ink p-4 md:p-8 md:p-6 md:p-12 text-canvas shadow-2xl relative overflow-hidden group rounded-[40px]">
           <Fingerprint className="absolute -top-6 -right-6 w-32 h-32 opacity-5 group-hover:scale-125 transition-transform duration-1000 text-cedar" />
           <p className="font-mono text-[10px] text-cedar mb-10 opacity-70 tracking-[0.3em] font-bold flex items-center gap-2 uppercase">
             <Layers className="w-4 h-4" /> Philosophy Integration
@@ -251,15 +255,15 @@ export const Process = () => {
             whileHover={{ y: -15, scale: 1.02 }}
             className="relative group cursor-default"
           >
-            <div className={`h-full p-4 md:p-8 border transition-all duration-700 ${phase.highlight ? 'bg-ink text-canvas border-ink shadow-2xl scale-105 z-20' : 'bg-white border-ink/10 hover:border-cedar/50 hover:shadow-xl'}`}>
+            <div className={`h-full p-4 md:p-8 border transition-all duration-700 rounded-[40px] ${phase.highlight ? 'bg-ink text-canvas border-ink shadow-2xl scale-105 z-20' : 'glass-card bg-white/20 border-white/30 hover:border-cedar/50 hover:shadow-xl'}`}>
               <div className="flex items-center justify-between mb-6">
-                <span className={`font-mono text-[10px] font-bold px-3 py-1.5 ${phase.highlight ? 'bg-cedar text-white' : 'bg-ink/5 text-ink/60'}`}>{phase.id}</span>
+                <span className={`font-mono text-[10px] font-bold px-3 py-1.5 rounded-full ${phase.highlight ? 'bg-cedar text-white' : 'bg-ink/5 text-ink/60'}`}>{phase.id}</span>
                 <span className={phase.highlight ? 'text-cedar' : 'text-cedar/40'}>{phase.icon}</span>
               </div>
               <h4 className={`font-sans-cn font-bold text-xl mb-1 ${phase.highlight ? 'text-white' : 'text-ink'}`}>{phase.title}</h4>
               <p className={`font-mono text-[10px] opacity-50 tracking-wider uppercase mb-8 ${phase.highlight ? 'text-white' : 'text-ink'}`}>{phase.sub}</p>
 
-              <div className={`space-y-4 pt-6 border-t ${phase.highlight ? 'border-white/10' : 'border-ink/5'}`}>
+              <div className={`space-y-4 pt-6 border-t ${phase.highlight ? 'border-white/10' : 'border-white/20'}`}>
                 {phase.tasks.map((task, i) => (
                   <div key={i} className="flex items-start gap-3 group/task">
                     <motion.div
@@ -301,7 +305,7 @@ export const Discovery = () => {
     <ResearchMethodology />
 
     <div className="grid lg:grid-cols-12 gap-6 md:p-12 mb-20">
-      <motion.div variants={itemVariants} className="lg:col-span-7 bg-white/60 border border-ink/5 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl hover:bg-white relative overflow-hidden group">
+      <motion.div variants={itemVariants} className="lg:col-span-7 glass-card bg-white/20 border border-white/20 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl hover:bg-white/30 relative overflow-hidden group rounded-[40px]">
          <div className="absolute top-0 right-0 w-32 h-32 bg-cedar/5 rounded-bl-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-1000" />
 
          <h4 className="font-mono text-cedar text-base font-bold mb-8 tracking-widest flex items-center gap-3 uppercase">
@@ -312,7 +316,7 @@ export const Discovery = () => {
          </p>
 
          <div className="grid md:grid-cols-2 gap-4 md:p-8 font-sans-cn">
-           <div className="bg-canvas p-4 md:p-8 border border-ink/10 relative group/box">
+           <div className="bg-canvas p-4 md:p-8 border border-white/30 relative group/box rounded-3xl">
              <Users className="w-6 h-6 text-cedar mb-6" />
              <p className="font-mono text-xs text-ink/50 mb-4 font-bold tracking-widest uppercase">受訪者輪廓 (N=50)</p>
              <ul className="text-sm space-y-4 opacity-90 leading-relaxed font-medium">
@@ -330,7 +334,7 @@ export const Discovery = () => {
              </ul>
            </div>
 
-           <div className="bg-ink text-canvas p-4 md:p-8 shadow-2xl relative group/box overflow-hidden">
+           <div className="bg-ink text-canvas p-4 md:p-8 shadow-2xl relative group/box overflow-hidden rounded-3xl">
              <MessageSquare className="w-6 h-6 text-cedar mb-6" />
              <p className="font-mono text-xs text-cedar mb-6 font-bold tracking-widest uppercase">Interview Key Insights</p>
              <div className="space-y-6">
@@ -350,14 +354,14 @@ export const Discovery = () => {
          </div>
       </motion.div>
 
-      <motion.div variants={itemVariants} className="lg:col-span-5 bg-white border border-ink/5 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl">
+      <motion.div variants={itemVariants} className="lg:col-span-5 glass-card bg-white/20 border border-white/20 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl rounded-[40px]">
         <p className="font-mono text-xs text-cedar mb-10 tracking-[0.3em] uppercase font-bold flex items-center gap-3">
           <BarChart3 className="w-5 h-5"/> Comparative Growth Analysis
         </p>
         <div className="flex-1 relative mb-12">
            <AnimatedLineChart />
         </div>
-        <div className="grid grid-cols-2 gap-6 md:p-10 border-t border-ink/5 pt-10">
+        <div className="grid grid-cols-2 gap-6 md:p-10 border-t border-white/20 pt-10">
            <div className="group/stat">
               <div className="flex items-center gap-2 mb-3">
                 <Leaf className="w-4 h-4 text-cedar" />
@@ -383,7 +387,7 @@ export const Discovery = () => {
       <CompetitorRadarChart />
     </div>
 
-    <motion.div variants={itemVariants} className="bg-white/30 border border-ink/10 backdrop-blur-xl">
+    <motion.div variants={itemVariants} className="glass-card bg-white/20 border border-white/30 backdrop-blur-xl rounded-[40px] overflow-hidden">
       <div className="bg-ink p-4 md:p-6 flex flex-col md:flex-row justify-between px-8 md:px-12 text-white items-center gap-4">
         <span className="font-mono text-xs font-bold tracking-[0.3em] flex items-center gap-3 uppercase">
            <Network className="w-5 h-5 text-cedar" />
@@ -404,7 +408,7 @@ export const Discovery = () => {
           { icon: <Search className="w-5 h-5"/>, name: "Bloomingville", pos: "Danish Premium", flaw: "情境圖美，但電商購買路徑極度不流暢。", opp: "吸取其情境攝影優勢，但提供極致流暢的本地化『一鍵結帳』體驗。" },
           { icon: <LayoutGrid className="w-5 h-5"/>, name: "Pinkoi", pos: "Designer Market", flaw: "平台視覺繁雜，難以建立統一的高端信任感。", opp: "採取『嚴格策展』模式，以極簡介面統一個別品牌視覺語彙。" }
         ].map((comp, idx) => (
-          <AccordionItem key={idx} value={`item-${idx}`} className="border-ink/5 px-12 bg-white/50 hover:bg-white transition-all duration-500">
+          <AccordionItem key={idx} value={`item-${idx}`} className="border-white/20 px-12 glass-card bg-white/20 hover:bg-white/30 transition-all duration-500">
             <AccordionTrigger className="hover:no-underline py-8 group/trigger">
               <div className="flex w-full text-left font-sans-cn pr-8 items-center gap-6 md:p-10">
                 <div className="w-[20%] flex items-center gap-4">
@@ -415,7 +419,7 @@ export const Discovery = () => {
                 <div className="w-[60%] text-sm font-light opacity-80 truncate group-hover/trigger:opacity-100">痛點: {comp.flaw}</div>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="bg-canvas border-l-4 border-cedar ml-6 pl-12 py-10 my-8 font-sans-cn relative overflow-hidden">
+            <AccordionContent className="bg-canvas border-l-4 border-cedar ml-6 pl-12 py-10 my-8 font-sans-cn relative overflow-hidden rounded-r-3xl">
               <Quote className="absolute -top-4 -left-4 w-24 h-24 opacity-5 text-cedar rotate-12" />
               <p className="font-mono text-[10px] text-cedar mb-4 tracking-[0.3em] font-bold flex items-center gap-3 uppercase">
                  <Lightbulb className="w-4 h-4" /> ZenSelect Strategic Opportunity
@@ -442,6 +446,7 @@ export const Persona = () => {
     </div>
 
     {/* Horizontal scroll persona cards */}
+    <div className="mb-20"><PersonaMatrix /></div>
     <div className="relative mb-20">
       <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 px-2 scrollbar-thin scrollbar-thumb-cedar/20 scrollbar-track-transparent" style={{ scrollbarWidth: 'thin' }}>
        {[
@@ -555,15 +560,15 @@ export const Persona = () => {
            whileInView={{ opacity: 1, x: 0 }}
            viewport={{ once: true }}
            transition={{ delay: i * 0.1 }}
-           className={`snap-center flex-shrink-0 w-[320px] md:w-[360px] bg-white/60 border border-ink/5 p-6 flex flex-col hover:shadow-2xl transition-all duration-500 ${persona.highlight ? 'border-b-4 border-b-cedar' : ''}`}
+           className={`snap-center flex-shrink-0 w-[320px] md:w-[360px] glass-card bg-white/20 border border-white/20 p-6 flex flex-col hover:shadow-2xl transition-all duration-500 rounded-[40px] ${persona.highlight ? 'border-b-4 border-b-cedar' : ''}`}
          >
-            <div className="aspect-[3/2] bg-mist mb-6 grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden relative group/img">
+            <div className="aspect-[3/2] bg-mist mb-6 grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden relative group/img rounded-3xl">
                <motion.div
                  className="w-full h-full"
                  whileHover={{ scale: 1.1 }}
                  style={{ backgroundImage: `url('${persona.img}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                />
-               <div className="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-md rounded-full text-cedar shadow-lg opacity-0 group-hover/img:opacity-100 transition-all">
+               <div className="absolute top-3 right-3 p-2 glass-card bg-white/60 backdrop-blur-md rounded-full text-cedar shadow-lg opacity-0 group-hover/img:opacity-100 transition-all">
                  {persona.icon}
                </div>
             </div>
@@ -574,7 +579,7 @@ export const Persona = () => {
               <span className="text-[11px] font-sans-cn opacity-50">{persona.role}</span>
             </div>
 
-            <div className="space-y-5 text-sm font-sans-cn font-light opacity-90 leading-relaxed border-t border-ink/5 pt-6 mb-6 flex-1">
+            <div className="space-y-5 text-sm font-sans-cn font-light opacity-90 leading-relaxed border-t border-white/20 pt-6 mb-6 flex-1">
                <div>
                   <p className="font-mono text-[9px] text-destructive/80 mb-2 uppercase font-bold flex items-center gap-2">
                     <AlertCircle className="w-3 h-3"/> {lang === "en" ? "Frustrations" : "痛點"}
@@ -603,7 +608,7 @@ export const Persona = () => {
                </div>
             </div>
 
-            <div className="space-y-2 pt-4 border-t border-ink/5">
+            <div className="space-y-2 pt-4 border-t border-white/20">
               <div className="flex justify-between items-center text-[9px] font-mono font-bold uppercase tracking-widest text-ink/40">
                 <span>Story Affinity</span>
                 <span className="text-cedar">{persona.stats.trust}%</span>
@@ -629,7 +634,7 @@ export const Persona = () => {
     </div>
 
     {/* Core Hypothesis */}
-    <motion.div variants={itemVariants} className="bg-ink p-6 md:p-12 lg:p-16 text-center relative overflow-hidden group mb-20">
+    <motion.div variants={itemVariants} className="bg-ink p-6 md:p-12 lg:p-16 text-center relative overflow-hidden group mb-20 rounded-[40px]">
        <Fingerprint className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] opacity-[0.03] text-cedar group-hover:scale-110 transition-transform duration-1000" />
        <p className="font-mono text-xs text-cedar mb-8 tracking-[0.4em] font-bold uppercase relative z-10">{t("hypothesis.label", lang)}</p>
        <h3 className="text-lg md:text-xl lg:text-2xl font-sans-cn font-medium leading-[1.5] text-canvas max-w-5xl mx-auto relative z-10 mb-8">
@@ -649,7 +654,7 @@ export const Persona = () => {
            <motion.div key={i}
              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
              transition={{ delay: i * 0.15 }}
-             className="bg-white/5 border border-white/10 p-5 backdrop-blur-sm hover:bg-white/10 transition-colors"
+             className="glass-card bg-white/10 border border-white/10 p-5 backdrop-blur-sm hover:bg-white/20 transition-colors rounded-3xl"
            >
              <div className="text-cedar mb-3">{hyp.icon}</div>
              <p className="font-mono text-[10px] text-cedar font-bold mb-2 uppercase tracking-wider">{hyp.title}</p>
@@ -669,7 +674,7 @@ export const Persona = () => {
         { icon: <LayoutGrid className="w-6 h-6" />, title: lang === "en" ? "Solution Direction 2: Cognitive Load Reduction" : "解決方向二：認知負荷降低", items: lang === "en" ? ["Dual-axis navigation (Room × Artisan)", "Smart comparison max 3 items", "Progressive disclosure on checkout", "Visual-first product filtering"] : ["雙軸心導覽（場景 × 職人）", "智慧比較最多 3 件商品", "結帳漸進式展開", "視覺優先的產品篩選"] },
       ].map((sol, i) => (
         <motion.div key={i} whileHover={{ y: -8 }}
-          className="bg-white/60 border border-ink/5 p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+          className="glass-card bg-white/20 border border-white/20 p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 rounded-[40px]"
         >
           <div className="text-cedar mb-4">{sol.icon}</div>
           <h4 className="font-sans-cn font-bold text-base mb-4">{sol.title}</h4>
@@ -699,8 +704,78 @@ export const Architecture = () => {
       <div className="flex-1 h-px bg-ink/10"></div>
     </div>
 
+    {/* Emotional Journey Arc - FULL BLEED REFACTOR */}
+    <div className="relative w-[100vw] left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] mb-56 px-8 lg:px-20 overflow-x-hidden">
+      <div className="max-w-screen-2xl mx-auto bg-stone/40 backdrop-blur-3xl rounded-[60px] p-8 md:p-16 lg:p-24 shadow-glass-deep border border-white/40">
+         <div className="flex flex-col lg:flex-row gap-20 items-start mb-20">
+            {/* Left: Large Chart Card */}
+            <div className="flex-1 w-full order-2 lg:order-1">
+              <div className="mb-10">
+                <h3 className="font-mono text-base text-accent_orange font-bold tracking-[0.3em] uppercase mb-3">
+                  使用者旅程情感弧線 EMOTIONAL JOURNEY ARC
+                </h3>
+                <p className="font-mono text-xs text-ink/50 tracking-wide">
+                  各 Persona 於 7 個旅程觸點的情感指數 (1=最低 / 10=最高) · 依可用性測試數據建模
+                </p>
+              </div>
+              <EmotionalJourneyChart />
+            </div>
+
+            {/* Right: The "Aha!" Moment */}
+            <div className="lg:w-[400px] flex-shrink-0 pt-8 order-1 lg:order-2">
+              <motion.div initial={{ x: 30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
+                <h3 className="font-display text-4xl italic mb-10 text-ink/80 tracking-tight">The &quot;Aha!&quot; Moment</h3>
+                <div className="border-l-4 border-accent_orange pl-10 py-4 mb-16 bg-white/5 backdrop-blur-sm rounded-r-3xl">
+                  <p className="text-lg font-sans-cn leading-relaxed text-ink/70 font-light">
+                    當 Persona (Mei) 在職人頁面看到<strong className="text-ink font-bold">「手工打磨過程」</strong>的 15 秒短片時，其信任指數從 4 激增至 9，這是我們全站導購的核心策略。
+                  </p>
+                </div>
+                <div className="space-y-6">
+                  <div className="glass-card bg-white/40 border border-white/40 p-8 rounded-[32px] shadow-glass transition-all hover:scale-[1.02]">
+                    <p className="font-mono text-[10px] opacity-40 uppercase tracking-[0.3em] mb-4 font-bold text-cedar">PAIN POINT</p>
+                    <p className="text-xl font-bold font-sans-cn text-ink">產品資訊碎片化</p>
+                  </div>
+                  <div className="glass-card bg-white/40 border border-white/40 p-8 rounded-[32px] shadow-glass transition-all hover:scale-[1.02]">
+                    <p className="font-mono text-[10px] opacity-40 uppercase tracking-[0.3em] mb-4 font-bold text-cedar">SOLUTION</p>
+                    <p className="text-xl font-bold font-sans-cn text-ink">沉浸式職人故事</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+         </div>
+
+         {/* Summary Cards Grid */}
+         <div className="grid md:grid-cols-3 gap-8">
+            <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }}
+              className="glass-card bg-white/40 border border-red-200/50 p-10 rounded-[40px] transition-all hover:shadow-xl hover:bg-white/60 group">
+              <div className="w-12 h-12 bg-red-100/50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                <AlertCircle className="text-red-400 w-6 h-6" />
+              </div>
+              <p className="font-sans-cn font-bold text-xl mb-4 text-ink">「研究評估」階段為最高摩擦點</p>
+              <p className="text-sm font-sans-cn opacity-60 leading-relaxed font-light">三位 Persona 在競品比較時情感指數均下降，資訊過載導致決策疲勞。</p>
+            </motion.div>
+            <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}
+              className="glass-card bg-white/40 border border-green-200/50 p-10 rounded-[40px] transition-all hover:shadow-xl hover:bg-white/60 group">
+              <div className="w-12 h-12 bg-green-100/50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                <Zap className="text-green-400 w-6 h-6" />
+              </div>
+              <p className="font-sans-cn font-bold text-xl mb-4 text-ink">「職人故事」為最大情感轉折點</p>
+              <p className="text-sm font-sans-cn opacity-60 leading-relaxed font-light">Mei 從 4→9, Sofia 從 5→8 的關鍵提升，證明了感性敘事的商業價值。</p>
+            </motion.div>
+            <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }}
+              className="glass-card bg-white/40 border border-stone-200 p-10 rounded-[40px] transition-all hover:shadow-xl hover:bg-white/60 group">
+              <div className="w-12 h-12 bg-stone-100 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                <Heart className="text-stone-400 w-6 h-6" />
+              </div>
+              <p className="font-sans-cn font-bold text-xl mb-4 text-ink">結帳後體驗是品牌黏著關鍵</p>
+              <p className="text-sm font-sans-cn opacity-60 leading-relaxed font-light">Post-purchase 達到全旅程最高情感頂點，建立長期忠誠度的絕佳時機。</p>
+            </motion.div>
+         </div>
+      </div>
+    </div>
+
     <div className="grid lg:grid-cols-1 gap-20">
-       <motion.div variants={itemVariants} className="bg-white/50 border border-ink/5 p-6 md:p-12 md:p-6 md:p-10 md:p-24 shadow-sm transition-all duration-700 hover:shadow-2xl">
+       <motion.div variants={itemVariants} className="glass-card bg-white/20 border border-white/20 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl rounded-[40px]">
           <div className="flex flex-col lg:flex-row justify-between items-start mb-16 gap-6 md:p-12">
             <div className="max-w-4xl">
               <h4 className="text-2xl md:text-3xl lg:text-4xl font-sans-cn font-bold mb-6">
@@ -727,18 +802,18 @@ export const Architecture = () => {
             </div>
             <div className="flex flex-col items-end gap-4">
               <span className="font-mono text-[10px] opacity-40 tracking-widest font-bold uppercase">Revision Status</span>
-              <span className="bg-cedar text-white px-5 py-2 font-mono text-[10px] font-bold tracking-widest uppercase">STABLE v2.4.0</span>
+              <span className="bg-cedar text-white px-5 py-2 font-mono text-[10px] font-bold tracking-widest uppercase rounded-xl">STABLE v2.4.0</span>
             </div>
           </div>
 
-          <div className="bg-white border border-ink/10 rounded-sm p-6 md:p-12 md:p-20 relative shadow-inner overflow-x-auto group/map">
+          <div className="glass-card bg-white/20 border border-white/30 rounded-[40px] p-6 md:p-12 md:p-20 relative shadow-inner overflow-x-auto group/map">
              <div className="min-w-[800px] transition-transform duration-1000 group-hover/map:scale-[1.01]">
                 <IACoreMap />
              </div>
           </div>
        </motion.div>
 
-       <motion.div variants={itemVariants} className="bg-white/50 border border-ink/5 p-6 md:p-12 md:p-6 md:p-10 md:p-24 shadow-sm transition-all duration-700 hover:shadow-2xl relative overflow-hidden">
+       <motion.div variants={itemVariants} className="glass-card bg-white/20 border border-white/20 p-6 md:p-12 shadow-sm transition-all duration-700 hover:shadow-2xl relative overflow-hidden rounded-[40px]">
           <div className="absolute top-0 right-0 p-6 md:p-12 pointer-events-none">
             <Activity className="w-32 h-32 opacity-[0.03] text-cedar" />
           </div>
@@ -746,7 +821,7 @@ export const Architecture = () => {
             <TrendingUp className="w-5 h-5"/> {t("arch.swimlane", lang)}
           </p>
           <EmotionSwimlane />
-          <div className="mt-16 border-t border-ink/10 pt-12 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 font-sans-cn">
+          <div className="mt-16 border-t border-white/30 pt-12 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 font-sans-cn">
              {[
                { title: lang === "en" ? "1. Inspiration Touch" : "1. 靈感觸及", content: lang === "en" ? "Minimal visual whitespace and high-quality photography to establish the first impression." : "運用極簡視覺留白與高質感攝影，建立第一印象。", icon: <Sparkles className="w-5 h-5"/>, metric: "Avg. 4.2s View" },
                { title: lang === "en" ? "2. Deep Evaluation" : "2. 深度評估", content: lang === "en" ? "High-resolution material close-ups and artisan interviews to build digital touch and professional trust." : "提供高解析度材質特寫與職人訪談，建立數位觸感與專業信任。", icon: <Microscope className="w-5 h-5"/>, metric: "72% Depth Read" },
@@ -763,7 +838,7 @@ export const Architecture = () => {
                  </div>
                  <strong className="block mb-3 font-bold text-base text-ink">{step.title}</strong>
                  <p className="text-xs font-light opacity-70 mb-4 leading-relaxed">{step.content}</p>
-                 <div className="font-mono text-[9px] text-cedar font-bold bg-cedar/5 px-2.5 py-1 inline-block uppercase tracking-widest">
+                 <div className="font-mono text-[9px] text-cedar font-bold bg-cedar/5 px-2.5 py-1 inline-block uppercase tracking-widest rounded-md">
                    {step.metric}
                  </div>
                </motion.div>
@@ -790,7 +865,7 @@ export const Outcome = () => {
     <div className="mb-20">
       {/* Header card */}
       <motion.div variants={itemVariants}
-        className="bg-ink text-canvas p-6 md:p-10 border border-ink/5 shadow-2xl relative overflow-hidden mb-8"
+        className="bg-ink text-canvas p-6 md:p-10 border border-white/20 shadow-2xl relative overflow-hidden mb-8 rounded-[40px]"
       >
         <div className="absolute inset-0 bg-cedar opacity-[0.03]" />
         <div className="relative z-10">
@@ -815,7 +890,7 @@ export const Outcome = () => {
       {/* Before / After Comparison */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         {/* Before */}
-        <motion.div variants={itemVariants} className="bg-white/60 border border-ink/10 p-6">
+        <motion.div variants={itemVariants} className="glass-card bg-white/20 border border-white/30 p-6 rounded-[40px]">
           <p className="font-mono text-[10px] text-destructive/70 font-bold tracking-widest uppercase mb-4 flex items-center gap-2">
             <AlertCircle className="w-3 h-3" /> {lang === "en" ? "BEFORE — Traditional 3-Step Checkout" : "BEFORE — 傳統三步驟結帳"}
           </p>
@@ -825,8 +900,8 @@ export const Outcome = () => {
               { step: "2", label: lang === "en" ? "Shipping & Billing" : "運送與帳單", fields: lang === "en" ? "18 fields visible" : "18 個欄位可見", status: "68% abandon" },
               { step: "3", label: lang === "en" ? "Payment & Confirm" : "付款與確認", fields: lang === "en" ? "8 fields visible" : "8 個欄位可見", status: "45% abandon" },
             ].map((s, i) => (
-              <div key={i} className="flex items-center gap-3 p-3 bg-ink/5 border border-ink/5">
-                <span className="w-6 h-6 rounded-full bg-ink/10 flex items-center justify-center font-mono text-[10px] font-bold shrink-0">{s.step}</span>
+              <div key={i} className="flex items-center gap-3 p-4 bg-ink/5 border border-white/20 rounded-3xl">
+                <span className="w-8 h-8 rounded-full bg-ink/10 flex items-center justify-center font-mono text-xs font-bold shrink-0">{s.step}</span>
                 <div className="flex-1">
                   <p className="font-sans-cn text-xs font-bold">{s.label}</p>
                   <p className="font-mono text-[9px] text-ink/40">{s.fields}</p>
@@ -835,14 +910,14 @@ export const Outcome = () => {
               </div>
             ))}
           </div>
-          <div className="mt-4 pt-3 border-t border-ink/10 flex justify-between font-mono text-[10px]">
+          <div className="mt-4 pt-3 border-t border-white/30 flex justify-between font-mono text-[10px] px-2">
             <span className="text-ink/40">{lang === "en" ? "Total fields: 38" : "總欄位數: 38"}</span>
             <span className="text-destructive/70 font-bold">{lang === "en" ? "Overall abandon: 84%" : "整體放棄率: 84%"}</span>
           </div>
         </motion.div>
 
         {/* After */}
-        <motion.div variants={itemVariants} className="bg-white/60 border border-cedar/20 p-6 relative overflow-hidden">
+        <motion.div variants={itemVariants} className="glass-card bg-white/20 border border-cedar/20 p-6 relative overflow-hidden rounded-[40px]">
           <div className="absolute top-0 right-0 w-16 h-16 bg-cedar/5 rounded-bl-full" />
           <p className="font-mono text-[10px] text-sage font-bold tracking-widest uppercase mb-4 flex items-center gap-2">
             <CheckCircle2 className="w-3 h-3" /> {lang === "en" ? "AFTER — Progressive Disclosure Flow" : "AFTER — 漸進式展開流程"}
@@ -853,8 +928,8 @@ export const Outcome = () => {
               { step: "2", label: lang === "en" ? "Progressive Shipping (expand on demand)" : "漸進式運送（按需展開）", fields: lang === "en" ? "4 visible, 6 on-demand" : "4 個可見，6 個按需展開", status: "85% continue" },
               { step: "3", label: lang === "en" ? "One-Tap Payment" : "一鍵付款", fields: lang === "en" ? "Saved methods, 2 taps" : "已儲存付款，2 次點擊", status: "78% complete" },
             ].map((s, i) => (
-              <div key={i} className="flex items-center gap-3 p-3 bg-cedar/5 border border-cedar/10">
-                <span className="w-6 h-6 rounded-full bg-cedar text-white flex items-center justify-center font-mono text-[10px] font-bold shrink-0">{s.step}</span>
+              <div key={i} className="flex items-center gap-3 p-4 bg-cedar/5 border border-cedar/10 rounded-3xl">
+                <span className="w-8 h-8 rounded-full bg-cedar text-white flex items-center justify-center font-mono text-xs font-bold shrink-0">{s.step}</span>
                 <div className="flex-1">
                   <p className="font-sans-cn text-xs font-bold">{s.label}</p>
                   <p className="font-mono text-[9px] text-cedar/60">{s.fields}</p>
@@ -863,7 +938,7 @@ export const Outcome = () => {
               </div>
             ))}
           </div>
-          <div className="mt-4 pt-3 border-t border-cedar/10 flex justify-between font-mono text-[10px]">
+          <div className="mt-4 pt-3 border-t border-cedar/10 flex justify-between font-mono text-[10px] px-2">
             <span className="text-ink/40">{lang === "en" ? "Total fields: 14 (visible)" : "總欄位數: 14 (可見)"}</span>
             <span className="text-sage font-bold">{lang === "en" ? "Overall abandon: 62%" : "整體放棄率: 62%"}</span>
           </div>
@@ -879,20 +954,20 @@ export const Outcome = () => {
           { label: lang === "en" ? "Mobile CVR Lift" : "手機轉換提升", value: "+28%", color: "text-cedar" },
         ].map((m, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-            className="bg-ink text-canvas p-5 text-center border border-ink/5"
+            className="bg-ink text-canvas p-6 text-center border border-white/20 rounded-3xl"
           >
             <motion.p initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} viewport={{ once: true }}
-              className={`text-3xl md:text-4xl font-display italic ${m.color} mb-2`}
+              className={`text-3xl md:text-5xl font-display italic ${m.color} mb-2`}
             >
               {m.value}
             </motion.p>
-            <p className="font-mono text-[9px] uppercase tracking-[0.3em] font-bold text-canvas/60">{m.label}</p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.4em] font-bold text-canvas/60">{m.label}</p>
           </motion.div>
         ))}
       </div>
 
       {/* Experiment details */}
-      <div className="flex flex-wrap gap-6 font-mono text-[10px] text-ink/40 uppercase tracking-widest">
+      <div className="flex flex-wrap gap-6 font-mono text-[10px] text-ink/40 uppercase tracking-widest px-6">
         <span>{t("outcome.sampleSize", lang)}: N = 2,400</span>
         <span>{t("outcome.confidence", lang)}: 98.4%</span>
         <span>{lang === "en" ? "Method: Bayesian A/B Test" : "方法: Bayesian A/B Test"}</span>
@@ -900,7 +975,7 @@ export const Outcome = () => {
       </div>
     </div>
 
-    <div className="grid lg:grid-cols-3 gap-6 md:p-12">
+    <div className="mb-20"><SUSGauge score={78} /></div><div className="grid lg:grid-cols-3 gap-6 md:p-12">
       {[
         { title: "UX 指標 (Usability)", icon: <MousePointerClick className="w-6 h-6"/>, metrics: [
           { label: "Task Completion Rate", val: "85%", target: "85%", trend: "Optimal", color: "text-sage", icon: <Target className="w-3 h-3"/> },
@@ -922,7 +997,7 @@ export const Outcome = () => {
           key={i}
           variants={itemVariants}
           whileHover={{ y: -10 }}
-          className="bg-white/60 p-6 md:p-12 border border-ink/5 shadow-sm transition-all duration-700 hover:shadow-2xl hover:bg-white"
+          className="glass-card bg-white/20 p-6 md:p-12 border border-white/20 shadow-sm transition-all duration-700 hover:shadow-2xl hover:bg-white/30 rounded-[40px]"
         >
            <div className="flex items-center gap-4 mb-12">
              <div className="text-cedar transition-transform group-hover:scale-110 duration-500">
@@ -966,7 +1041,7 @@ export const Outcome = () => {
 export const PortfolioStrategy = () => {
   const { lang } = useLanguage();
   return (
-  <motion.section id="portfolio" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="mt-48 pt-32 border-t border-ink/10 pb-40">
+  <motion.section id="portfolio" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="mt-48 pt-32 border-t border-white/30 pb-40">
     <div className="mb-20 flex items-center gap-4 md:p-8">
       <span className="font-mono text-cedar text-sm font-bold tracking-[0.4em] flex items-center gap-3 uppercase">
         <CheckSquare className="w-6 h-6"/> {t("portfolio.section", lang)}
@@ -976,7 +1051,7 @@ export const PortfolioStrategy = () => {
 
     <div className="grid lg:grid-cols-12 gap-20 items-start">
        <motion.div variants={itemVariants} className="lg:col-span-5">
-          <div className="p-6 md:p-12 md:p-4 md:p-8 md:p-16 bg-white border border-ink/10 shadow-sm hover:shadow-2xl transition-all duration-700 relative overflow-hidden group">
+          <GlassCard className="lg:col-span-12 md:p-12 relative overflow-hidden group rounded-[40px]">
             <div className="absolute top-0 left-0 w-2 h-full bg-cedar opacity-20 group-hover:opacity-100 transition-opacity" />
             <h4 className="text-lg md:text-2xl font-bold font-sans-cn mb-8 flex items-center gap-4 uppercase"><Layers className="w-8 h-8 text-cedar"/> UI Sandwich 結構</h4>
             <p className="text-lg font-sans-cn font-light opacity-80 leading-relaxed mb-12">
@@ -991,17 +1066,17 @@ export const PortfolioStrategy = () => {
                 <motion.div
                   key={i}
                   whileHover={{ x: 15 }}
-                  className={`p-6 flex items-center gap-4 transition-all duration-500 border-l-4 ${item.active ? 'bg-ink text-canvas border-cedar shadow-xl' : 'bg-canvas border-transparent text-ink/40 hover:text-ink hover:bg-white hover:border-cedar/30'}`}
+                  className={`p-6 flex items-center gap-4 transition-all duration-500 border-l-4 rounded-3xl ${item.active ? 'bg-ink text-canvas border-cedar shadow-xl' : 'bg-canvas border-transparent text-ink/40 hover:text-ink hover:bg-white/20 hover:border-cedar/30'}`}
                 >
                   {item.icon} {item.text}
                 </motion.div>
               ))}
             </div>
-          </div>
+          </GlassCard>
        </motion.div>
        <motion.div variants={itemVariants} className="lg:col-span-7">
           <div className="grid md:grid-cols-2 gap-6 md:p-10">
-            <motion.div whileHover={{ y: -10 }} className="p-6 md:p-12 border border-ink/10 bg-white/40 hover:border-cedar/30 transition-all duration-700 shadow-sm hover:shadow-xl group">
+            <GlassCard className="p-6 md:p-12 hover:border-accent_orange/30 transition-all duration-700 shadow-sm hover:shadow-xl group rounded-[40px]">
                <p className="font-mono text-xs text-cedar mb-8 font-bold tracking-[0.3em] flex items-center gap-4 uppercase"><CheckCircle2 className="w-5 h-5"/> Portfolio Checklist</p>
                <ul className="text-sm font-sans-cn font-medium space-y-6 opacity-90">
                  {[
@@ -1017,8 +1092,8 @@ export const PortfolioStrategy = () => {
                    </li>
                  ))}
                </ul>
-            </motion.div>
-            <motion.div whileHover={{ y: -10 }} className="p-6 md:p-12 border border-ink/10 bg-ink text-canvas flex flex-col justify-between transition-all duration-700 shadow-2xl group/tools relative overflow-hidden">
+            </GlassCard>
+            <GlassCard className="p-6 md:p-12 bg-ink text-canvas flex flex-col justify-between transition-all duration-700 shadow-2xl group/tools relative overflow-hidden border-none rounded-[40px]" deep>
                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-cedar/10 rounded-full blur-3xl" />
                <div className="relative z-10">
                  <p className="font-mono text-xs text-cedar mb-10 font-bold tracking-[0.3em] flex items-center gap-4 uppercase"><Wrench className="w-5 h-5"/> Technical Stack</p>
@@ -1039,11 +1114,11 @@ export const PortfolioStrategy = () => {
                <motion.button
                  whileHover={{ scale: 1.05 }}
                  whileTap={{ scale: 0.95 }}
-                 className="mt-16 bg-cedar text-white py-5 px-8 flex items-center justify-center gap-4 text-[10px] uppercase tracking-[0.4em] font-bold group/btn relative z-10 shadow-lg hover:shadow-cedar/20"
+                 className="mt-16 bg-cedar text-white py-5 px-8 flex items-center justify-center gap-4 text-[10px] uppercase tracking-[0.4em] font-bold group/btn relative z-10 shadow-lg hover:shadow-cedar/20 rounded-3xl"
                >
                  View Prototype <ChevronRight className="w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
                </motion.button>
-            </motion.div>
+            </GlassCard>
           </div>
        </motion.div>
     </div>

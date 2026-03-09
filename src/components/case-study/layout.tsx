@@ -57,7 +57,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${isScrolled ? 'py-4 bg-canvas/95 backdrop-blur-xl border-b border-ink/10 shadow-sm' : 'py-8 bg-transparent'}`}>
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${isScrolled ? 'py-4 bg-transparent/45 backdrop-blur-xl border-b border-ink/10 shadow-sm' : 'py-8 bg-transparent'}`}>
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-[2px] bg-cedar origin-left"
         style={{ scaleX }}
@@ -113,7 +113,7 @@ export const Header = () => {
             onClick={toggleLang}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-4 py-2 border border-ink/10 hover:border-cedar/50 transition-all font-mono text-[11px] font-bold tracking-wider uppercase bg-white/80 backdrop-blur-sm"
+            className="flex items-center gap-2 px-4 py-2 border border-ink/10 hover:border-cedar/50 transition-all font-mono text-[11px] font-bold tracking-wider uppercase bg-transparent/40 backdrop-blur-sm"
           >
             <Globe className="w-3.5 h-3.5 text-cedar" />
             <span className={lang === "en" ? "text-cedar" : "text-ink/40"}>EN</span>
@@ -175,7 +175,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="border-t border-ink/10 mt-40 pb-20 pt-32 bg-white relative overflow-hidden">
+    <footer className="backdrop-blur-xl bg-white/20 border-t border-ink/10 mt-40 pb-20 pt-32 bg-transparent relative overflow-hidden">
        <div className="absolute top-0 right-0 w-64 h-64 bg-cedar/5 rounded-full blur-3xl -mr-32 -mt-32" />
 
        <div className="max-w-screen-2xl mx-auto px-8">
