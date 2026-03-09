@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { JOURNEY_POINTS } from "@/data/research-data";
 import { useLanguage } from "@/context/language-context";
 
-const CHART_H = 180;
-const CHART_W = 700;
-const PAD_X = 60;
-const PAD_Y = 20;
+const CHART_H = 240;
+const CHART_W = 850;
+const PAD_X = 80;
+const PAD_Y = 50;
 const MIN_VAL = 1;
 const MAX_VAL = 10;
 
@@ -44,36 +44,21 @@ export function EmotionalJourneyChart() {
   const total = JOURNEY_POINTS.length;
 
   return (
-    <div className="w-full">
-      <div className="mb-6">
-        <p className="font-mono text-xs text-accent_orange font-bold tracking-widest uppercase mb-1">
-          {lang === 'en' ? 'Emotional Journey Arc' : '使用者旅程情感弧線'}
-        </p>
-        <p className="font-mono text-[10px] text-ink/40">
-          {lang === 'en'
-            ? 'Emotional index across 7 touchpoints (1=Low / 10=High) · Modeled from usability data'
-            : '各 Persona 於 7 個旅程觸點的情感指數 (1=最低 / 10=最高) · 依可用性測試數據建模'}
-        </p>
-      </div>
+    <div className="w-full bg-white rounded-[40px] p-6 md:p-10 shadow-glass border border-white/80 relative overflow-hidden transition-all duration-500 hover:shadow-glass-deep">
+      <div className="relative overflow-x-auto scrollbar-hide pb-6">
+        <svg viewBox={`0 0 ${CHART_W} ${CHART_H + 110}`} className="w-full min-w-[780px]">
+          {/* zones */}
+          <line x1={PAD_X} y1={toY(8)} x2={CHART_W-PAD_X} y2={toY(8)} stroke="#E2E8F0" strokeDasharray="6 6" strokeOpacity="0.8" />
+          <text x={PAD_X + 10} y={toY(8) - 12} fontSize="10" className="fill-stone-400 font-mono italic font-bold uppercase tracking-widest">DELIGHT ZONE</text>
 
-      <div className="bg-white/30 backdrop-blur-md rounded-32 border border-white/40 shadow-glass p-6 overflow-x-auto">
-        <svg viewBox={`0 0 ${CHART_W} ${CHART_H + 80}`} className="w-full" style={{ minWidth: 500 }}>
-          {/* Grid horizontal lines */}
+          <line x1={PAD_X} y1={toY(4)} x2={CHART_W-PAD_X} y2={toY(4)} stroke="#FEE2E2" strokeDasharray="6 6" strokeOpacity="0.8" />
+          <text x={PAD_X + 10} y={toY(4) + 20} fontSize="10" className="fill-red-200 font-mono italic font-bold uppercase tracking-widest">FRICTION ZONE</text>
+
+          {/* Grid labels */}
           {[2, 4, 6, 8, 10].map((v) => (
-            <g key={v}>
-              <line
-                x1={PAD_X}
-                y1={toY(v)}
-                x2={CHART_W - PAD_X}
-                y2={toY(v)}
-                stroke="#1C1A18"
-                strokeOpacity={0.05}
-                strokeWidth={1}
-              />
-              <text x={PAD_X - 8} y={toY(v) + 4} textAnchor="end" fontSize={9} fill="#1C1A18" fillOpacity={0.35} fontFamily="monospace">
-                {v}
-              </text>
-            </g>
+            <text key={v} x={PAD_X - 25} y={toY(v) + 4} textAnchor="end" fontSize={11} className="fill-stone-300 font-mono font-bold">
+              {v}
+            </text>
           ))}
 
           {/* Persona lines */}
@@ -89,24 +74,27 @@ export function EmotionalJourneyChart() {
                   d={pathD}
                   fill="none"
                   stroke={persona.color}
-                  strokeWidth={2.5}
+                  strokeWidth={4}
                   strokeLinecap="round"
-                  initial={{ pathLength: 0 }}
-                  whileInView={{ pathLength: 1 }}
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  whileInView={{ pathLength: 1, opacity: 0.65 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 2, ease: "easeInOut" }}
+                  transition={{ duration: 2.5, ease: [0.22, 1, 0.36, 1] }}
                 />
                 {points.map((p, i) => (
                   <motion.circle
                     key={i}
                     cx={toX(p.idx, total)}
                     cy={toY(p.val)}
-                    r={5}
-                    fill={persona.color}
+                    r={7}
+                    fill="white"
+                    stroke={persona.color}
+                    strokeWidth={3}
+                    className="shadow-sm"
                     initial={{ scale: 0, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: (i / total) * 1.8 + 0.3, duration: 0.3 }}
+                    transition={{ delay: (i / total) * 1.8 + 0.5, duration: 0.4 }}
                   />
                 ))}
               </g>
@@ -118,48 +106,57 @@ export function EmotionalJourneyChart() {
             <g key={jp.stage}>
               <line
                 x1={toX(i, total)}
-                y1={CHART_H - PAD_Y}
+                y1={CHART_H - PAD_Y + 15}
                 x2={toX(i, total)}
-                y2={CHART_H - PAD_Y + 5}
-                stroke="#1C1A18"
-                strokeOpacity={0.15}
+                y2={CHART_H - PAD_Y + 35}
+                stroke="#F1F5F9"
+                strokeWidth="2"
               />
               <text
                 x={toX(i, total)}
-                y={CHART_H - PAD_Y + 18}
+                y={CHART_H - PAD_Y + 55}
                 textAnchor="middle"
-                fontSize={8.5}
-                fontWeight="bold"
-                fill="#1C1A18"
-                fillOpacity={0.6}
+                fontSize={13}
+                className="fill-stone-800 font-bold"
               >
                 {lang === 'en' ? jp.stage : jp.stageCN}
               </text>
               <text
                 x={toX(i, total)}
-                y={CHART_H - PAD_Y + 32}
+                y={CHART_H - PAD_Y + 72}
                 textAnchor="middle"
-                fontSize={7.5}
-                fill="#1C1A18"
-                fillOpacity={0.35}
-                fontFamily="monospace"
+                fontSize={10}
+                className="fill-stone-400 font-mono uppercase tracking-widest font-bold"
               >
                 {jp.stage}
               </text>
+              <text
+                x={toX(i, total)}
+                y={CHART_H - PAD_Y + 88}
+                textAnchor="middle"
+                fontSize={9}
+                className="fill-stone-300 italic font-medium"
+              >
+                {i === 0 ? "IG / Pinterest..." : i === 1 ? "Product Page B..." : i === 2 ? "Competitor Com..." : i === 3 ? "Artisan Story ..." : i === 4 ? "Add to Cart" : i === 5 ? "Checkout Flow" : "Unboxing + Rev..."}
+              </text>
             </g>
           ))}
-        </svg>
 
-        {/* Legend */}
-        <div className="flex flex-wrap gap-6 mt-4 font-mono text-[10px]">
-          {PERSONAS.map((p) => (
-            <div key={p.key} className="flex items-center gap-2">
-              <div className="w-6 h-0.5" style={{ backgroundColor: p.color }} />
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: p.color }} />
-              <span style={{ color: p.color }}>{p.label}</span>
-            </div>
-          ))}
-        </div>
+          <text x={CHART_W - PAD_X} y={CHART_H + 100} textAnchor="end" fontSize={11} className="fill-stone-400 font-mono font-bold opacity-40 tracking-widest uppercase">
+            {lang === 'en' ? 'Y: EMOTIONAL INDEX (1-10) · X: TOUCHPOINTS' : 'Y軸：情感指數 (1-10) · X軸：旅程觸點'}
+          </text>
+        </svg>
+      </div>
+
+      {/* Legend */}
+      <div className="flex flex-wrap gap-12 mt-10 border-t border-stone-100/50 pt-8 font-mono text-[12px]">
+        {PERSONAS.map((p) => (
+          <div key={p.key} className="flex items-center gap-4 group cursor-default">
+            <div className="w-14 h-1 rounded-full opacity-30" style={{ backgroundColor: p.color }} />
+            <div className="w-4 h-4 rounded-full border-2 border-white shadow-md transition-transform group-hover:scale-125" style={{ backgroundColor: p.color }} />
+            <span className="text-stone-600 font-bold tracking-[0.2em] uppercase">{p.label}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

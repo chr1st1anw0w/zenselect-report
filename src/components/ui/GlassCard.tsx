@@ -10,7 +10,7 @@ export default function GlassCard({
   deep?: boolean
 }){
   return (
-    <div className={`${deep ? 'glass-card-deep' : 'glass-card'} p-8 ${className}`}>
+    <div className={`transition-all duration-500 rounded-[40px] border border-white/80 p-10 ${deep ? 'bg-white/40 backdrop-blur-3xl shadow-glass-deep' : 'bg-white/20 backdrop-blur-2xl shadow-glass hover:shadow-glass-deep'} ${className}`}>
       {children}
     </div>
   )
