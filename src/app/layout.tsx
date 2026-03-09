@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_TC, JetBrains_Mono } from "next/font/google";
+import { LanguageProvider } from "@/context/language-context";
 import "./globals.css";
 
 const display = Inter({ 
@@ -32,7 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW" className={`${display.variable} ${sansCn.variable} ${mono.variable}`}>
-      <body className="blueprint-grid font-sans-cn tracking-wide">{children}</body>
+      <body className="blueprint-grid font-sans-cn tracking-wide">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
