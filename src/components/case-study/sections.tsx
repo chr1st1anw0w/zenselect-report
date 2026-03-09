@@ -133,7 +133,6 @@ export const SentimentAnalysis = () => (
 );
 
 export const Hero = () => {
-  const { lang } = useLanguage();
   return (
   <motion.section
     variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}
