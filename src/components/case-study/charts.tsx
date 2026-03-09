@@ -1,11 +1,11 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   TrendingUp, Sparkles,
   Target, Users, Zap,
-  Heart, Eye, Search, ShoppingBag, Star as StarIcon
+  Heart
 } from "lucide-react";
 import { JOURNEY_POINTS, COMPETITOR_DATA, HMW_STATEMENTS } from "@/data/research-data";
 import { useLanguage } from "@/context/language-context";
