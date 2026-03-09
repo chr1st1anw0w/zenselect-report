@@ -30,6 +30,11 @@ const config = {
         cedar: "#8B7355",
         sage: "#5A8A5A",
         mist: "#EDE6DC",
+        // Redesign Palette
+        sand: "#F2E8DC",
+        stone: "#E6DED3",
+        clay: "#D9CFC4",
+        accent_orange: "#FF7A1A",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -64,6 +69,13 @@ const config = {
         "sans-cn": ["var(--font-sans-cn)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
+      borderRadius: {
+        '24': '24px',
+        '20': '20px',
+      },
+      boxShadow: {
+        'glass': '0 20px 40px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.45)',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -73,10 +85,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "orb-pulse": {
+          "0%, 100%": { opacity: "0.9", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.05)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "orb-pulse": "orb-pulse 6s ease-in-out infinite",
       },
     },
   },
