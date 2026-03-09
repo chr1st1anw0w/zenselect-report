@@ -6,9 +6,9 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 1694ms
+ ✓ Ready in 2.4s
  ○ Compiling / ...
- ✓ Compiled / in 8.8s (1593 modules)
+ ✓ Compiled / in 14.6s (1608 modules)
 Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
     at title
     at circle
@@ -23,7 +23,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -72,7 +74,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -121,7 +125,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -170,7 +176,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -219,7 +227,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -268,7 +278,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -317,7 +329,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -366,7 +380,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -415,7 +431,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -464,7 +482,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -513,7 +533,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -562,7 +584,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -611,7 +635,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -660,7 +686,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -709,7 +737,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -758,7 +788,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -807,7 +839,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -856,7 +890,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -905,7 +941,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -954,7 +992,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1003,7 +1043,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1038,8 +1080,8 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
     at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
     at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
- HEAD / 200 in 9641ms
- ✓ Compiled in 1179ms (793 modules)
+ GET / 200 in 16183ms
+ ✓ Compiled in 1829ms (800 modules)
 Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
     at title
     at circle
@@ -1054,56 +1096,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
     at div
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
     at main
     at div
     at CaseStudyPage
@@ -1152,7 +1147,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1201,7 +1198,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1250,7 +1249,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1299,7 +1300,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1348,7 +1351,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1397,7 +1402,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1446,7 +1453,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1495,7 +1504,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1544,7 +1555,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1593,7 +1606,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1642,7 +1657,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1691,7 +1708,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1740,7 +1759,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1789,7 +1810,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1838,7 +1861,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1887,7 +1912,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1936,7 +1963,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -1985,7 +2014,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -2034,57 +2065,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
- GET / 200 in 205ms
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
     at div
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
     at main
     at div
     at CaseStudyPage
@@ -2133,7 +2116,9 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at div
     at section
     at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
+    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2648:92)
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
     at main
     at div
     at CaseStudyPage
@@ -2168,935 +2153,4 @@ Warning: React expects the `children` prop of <title> tags to be a string, numbe
     at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
     at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
     at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
-Warning: React expects the `children` prop of <title> tags to be a string, number, or object with a novel `toString` method but found an Array with length 5 instead. Browsers treat all child Nodes of <title> tags as Text content and React expects to be able to convert `children` of <title> tags to a single string value which is why Arrays of length greater than 1 are not supported. When using JSX it can be commong to combine text nodes and value nodes. For example: <title>hello {nameOfUser}</title>. While not immediately apparent, `children` in this case is an Array with length 2. If your `children` prop is using this form try rewriting it using a template string: <title>{`hello ${nameOfUser}`}</title>.
-    at title
-    at circle
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at g
-    at svg
-    at div
-    at div
-    at EmotionSwimlane (webpack-internal:///(ssr)/./src/components/case-study/charts.tsx:297:92)
-    at div
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at div
-    at section
-    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:60:65)
-    at Architecture (webpack-internal:///(ssr)/./src/components/case-study/sections.tsx:2628:92)
-    at main
-    at div
-    at CaseStudyPage
-    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
-    at Lazy
-    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
-    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
-    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
-    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
-    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
-    at Lazy
-    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
-    at Lazy
-    at LanguageProvider (webpack-internal:///(ssr)/./src/context/language-context.tsx:16:29)
-    at Lazy
-    at body
-    at html
-    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
-    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
-    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
-    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
-    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
-    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
-    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
-    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
-    at Lazy
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at r7 (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:19155)
-    at ServerInsertedHTMLProvider (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:40:24939)
- GET / 200 in 111ms
+ GET / 200 in 315ms

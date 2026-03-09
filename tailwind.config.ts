@@ -31,10 +31,10 @@ const config = {
         sage: "#5A8A5A",
         mist: "#EDE6DC",
         // Redesign Palette
-        sand: "#F2E8DC",
-        stone: "#E6DED3",
-        clay: "#D9CFC4",
-        accent_orange: "#FF7A1A",
+        sand: "#F7F1EA",
+        stone: "#F0EAE3",
+        clay: "#E8E1D9",
+        accent_orange: "#F2994A",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -70,11 +70,14 @@ const config = {
         mono: ["var(--font-mono)", "monospace"],
       },
       borderRadius: {
+        "32": "32px",
+        "40": "40px",
         '24': '24px',
         '20': '20px',
       },
       boxShadow: {
         'glass': '0 20px 40px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.45)',
+        'glass-deep': '0 40px 80px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.5)',
       },
       keyframes: {
         "accordion-down": {

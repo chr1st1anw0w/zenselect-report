@@ -2,13 +2,15 @@ import { ReactNode } from "react"
 
 export default function GlassCard({
   children,
-  className = ""
+  className = "",
+  deep = false
 }:{
   children: ReactNode
   className?: string
+  deep?: boolean
 }){
   return (
-    <div className={`glass-card p-8 ${className}`}>
+    <div className={`${deep ? 'glass-card-deep' : 'glass-card'} p-8 ${className}`}>
       {children}
     </div>
   )

@@ -1,12 +1,12 @@
 export default function GlowOrb({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`absolute w-[220px] h-[220px] rounded-full blur-sm animate-orb-pulse ${className}`}
+      className={`absolute w-[320px] h-[320px] rounded-full blur-[80px] animate-orb-pulse ${className}`}
       style={{
         background:
-          "radial-gradient(circle,#FF8C2A 0%,#FF7A1A 40%,rgba(255,122,26,0.25) 70%,transparent 100%)",
+          "radial-gradient(circle, #F2994A 0%, #F2994A 30%, rgba(242, 153, 74, 0.15) 70%, transparent 100%)",
         boxShadow:
-          "0 0 80px rgba(255,140,42,0.55),0 0 160px rgba(255,140,42,0.25)",
+          "0 0 100px rgba(242, 153, 74, 0.15), 0 0 200px rgba(242, 153, 74, 0.05)",
       }}
     />
   )
