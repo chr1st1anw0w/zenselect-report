@@ -1,8 +1,10 @@
 "use client";
 
-import { Activity, Menu, X, ArrowUp } from "lucide-react";
+import { Activity, Menu, X, ArrowUp, Globe } from "lucide-react";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/context/language-context";
+import { t } from "@/lib/translations";
 
 export const Header = () => {
   const { scrollYProgress } = useScroll();
@@ -12,6 +14,7 @@ export const Header = () => {
     restDelta: 0.001
   });
 
+  const { lang, toggleLang } = useLanguage();
   const [activeSection, setActiveSection] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,11 +49,11 @@ export const Header = () => {
   }, []);
 
   const navItems = [
-    { id: "process", label: "00. Flow" },
-    { id: "discovery", label: "01. Research" },
-    { id: "definition", label: "02. Personas" },
-    { id: "architecture", label: "03. IA" },
-    { id: "outcome", label: "04. Metrics" },
+    { id: "process", label: t("nav.flow", lang) },
+    { id: "discovery", label: t("nav.research", lang) },
+    { id: "definition", label: t("nav.personas", lang) },
+    { id: "architecture", label: t("nav.ia", lang) },
+    { id: "outcome", label: t("nav.metrics", lang) },
   ];
 
   return (
@@ -68,7 +71,7 @@ export const Header = () => {
             <Activity className="text-cedar w-6 h-6" />
           </motion.div>
           <div className="flex flex-col">
-            <p className="font-mono text-sm font-bold tracking-tighter text-ink uppercase">ZenSelect // Expert View</p>
+            <p className="font-mono text-sm font-bold tracking-tighter text-ink uppercase">{t("nav.brand", lang)}</p>
             <AnimatePresence>
               {!isScrolled && (
                 <motion.p
@@ -77,7 +80,7 @@ export const Header = () => {
                   exit={{ opacity: 0, height: 0 }}
                   className="font-mono text-[10px] tracking-widest text-ink uppercase"
                 >
-                  Analysis & Strategy Report v2.0
+                  {t("nav.subtitle", lang)}
                 </motion.p>
               )}
             </AnimatePresence>
@@ -104,13 +107,28 @@ export const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden p-2 text-ink hover:text-cedar transition-colors"
-        >
-          {isMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-4">
+          {/* Language Toggle */}
+          <motion.button
+            onClick={toggleLang}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex items-center gap-2 px-4 py-2 border border-ink/10 hover:border-cedar/50 transition-all font-mono text-[11px] font-bold tracking-wider uppercase bg-white/80 backdrop-blur-sm"
+          >
+            <Globe className="w-3.5 h-3.5 text-cedar" />
+            <span className={lang === "en" ? "text-cedar" : "text-ink/40"}>EN</span>
+            <span className="text-ink/20">|</span>
+            <span className={lang === "zh" ? "text-cedar" : "text-ink/40"}>中</span>
+          </motion.button>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden p-2 text-ink hover:text-cedar transition-colors"
+          >
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav Overlay */}
@@ -141,7 +159,7 @@ export const Header = () => {
               animate={{ opacity: 0.3 }}
               className="absolute bottom-10 font-mono text-[10px] tracking-widest uppercase"
             >
-              Expert Review Interface
+              {t("nav.expertReview", lang)}
             </motion.div>
           </motion.div>
         )}
@@ -151,6 +169,7 @@ export const Header = () => {
 };
 
 export const Footer = () => {
+  const { lang } = useLanguage();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -176,7 +195,7 @@ export const Footer = () => {
                onClick={scrollToTop}
                className="group flex items-center gap-4 font-mono text-xs font-bold tracking-[0.4em] uppercase text-cedar hover:text-ink transition-colors"
              >
-               Back to Top <ArrowUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+               {t("footer.backToTop", lang)} <ArrowUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
              </button>
 
              <div className="mt-20 md:mt-0 flex flex-wrap gap-8 font-mono text-[10px] opacity-40 uppercase tracking-[0.2em]">
