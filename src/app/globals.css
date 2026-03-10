@@ -24,6 +24,10 @@
     --input: 24 8.7% 85%;
     --ring: 24 8.7% 10.2%;
     --radius: 0rem; /* Sharp edges for ZenSelect */
+    /* Minimum body font: 10pt ≈ 13.33px */
+    --font-size-min-body: 13px;
+    --font-size-min-label: 11px;
+    --font-size-min-caption: 11px;
   }
 
   * {
@@ -31,6 +35,7 @@
   }
   body {
     @apply bg-background text-foreground antialiased selection:bg-accent selection:text-accent-foreground;
+    font-size: var(--font-size-min-body);
   }
 
   /* Custom Blueprint Grid */
@@ -40,9 +45,13 @@
     background-size: 32px 32px;
   }
 
-  /* Custom scrollbar */
+  /* Custom scrollbar — main */
   ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-thumb { background: #8B7355; }
+  ::-webkit-scrollbar-thumb { background: #8B7355; border-radius: 2px; }
+
+  /* Hide scrollbar for horizontal card scrollers */
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 }
 
 @layer components {

@@ -59,7 +59,7 @@ export const AnimatedLineChart = () => {
           />
         ))}
       </svg>
-      <div className="flex justify-between mt-6 font-mono text-[10px] text-ink/40 uppercase font-bold tracking-widest">
+      <div className="flex justify-between mt-6 font-mono text-[12px] text-ink/40 uppercase font-bold tracking-widest">
         <span>Q1</span>
         <span>Q2</span>
         <span>Q3</span>
@@ -84,7 +84,7 @@ export const EmotionSwimlane = () => {
     <div className="w-full space-y-6">
       {phases.map((p, i) => (
         <div key={i} className="flex items-center gap-6 group">
-          <div className="w-24 font-mono text-[10px] font-bold text-ink/40 uppercase tracking-widest">{p.label}</div>
+          <div className="w-28 font-mono text-[12px] font-bold text-ink/40 uppercase tracking-widest">{p.label}</div>
           <div className="flex-1 h-3 bg-white/10 rounded-full overflow-hidden border border-white/20">
             <motion.div
               initial={{ width: 0 }}
@@ -136,7 +136,7 @@ export const CompetitorRadarChart = () => {
     <div className="w-full glass-card bg-white/20 border border-white/60 p-8 md:p-16 rounded-[40px] shadow-glass">
       <div className="flex flex-col lg:flex-row gap-16 items-center">
         <div className="flex-1">
-          <h4 className="font-mono text-xs text-cedar font-bold tracking-[0.3em] uppercase mb-6">Strategic Positioning Matrix</h4>
+          <h4 className="font-mono text-[13px] text-cedar font-bold tracking-[0.3em] uppercase mb-6">Strategic Positioning Matrix</h4>
           <p className="text-sm font-sans-cn font-light opacity-60 leading-relaxed mb-10 max-w-md">
             透過雷達圖可視化發現，ZenSelect 在「敘事力」與「材質透明度」具備絕對差異化優勢，而「UX 效率」則透過本次改版追平 MUJI 等一線工業品牌。
           </p>
@@ -144,7 +144,7 @@ export const CompetitorRadarChart = () => {
             {axis.map((a, i) => (
               <div key={i} className="flex items-center gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-cedar/30" />
-                <span className="font-mono text-[9px] font-bold text-ink/40 uppercase tracking-widest">{a}</span>
+                <span className="font-mono text-[11px] font-bold text-ink/40 uppercase tracking-widest">{a}</span>
               </div>
             ))}
           </div>
@@ -186,7 +186,7 @@ export const CompetitorRadarChart = () => {
           </svg>
 
           {/* Legend */}
-          <div className="flex flex-wrap lg:flex-col gap-4 font-mono text-[10px] font-bold">
+          <div className="flex flex-wrap lg:flex-col gap-4 font-mono text-[12px] font-bold">
             {competitors.map((comp) => (
               <button
                 key={comp.name}
@@ -198,7 +198,7 @@ export const CompetitorRadarChart = () => {
               >
                 <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: RADAR_COLORS[comp.name] }} />
                 <span>{comp.name}</span>
-                {comp.highlight && <span className="text-[8px] bg-cedar text-white px-2 py-0.5 rounded ml-2 tracking-tighter">TARGET</span>}
+                {comp.highlight && <span className="text-[11px] bg-cedar text-white px-2 py-0.5 rounded ml-2 tracking-tighter">TARGET</span>}
               </button>
             ))}
           </div>
@@ -223,10 +223,10 @@ export const HMWMatrix = () => {
     <div className="w-full">
       <div className="mb-10 flex justify-between items-end">
         <div>
-          <p className="font-mono text-xs text-cedar font-bold tracking-[0.3em] uppercase mb-2">
+          <p className="font-mono text-[13px] text-cedar font-bold tracking-[0.3em] uppercase mb-2">
             {lang === "en" ? "HMW Opportunity Matrix — Impact × Effort" : "HMW 核心機會矩陣 — 影響力 × 執行難度"}
           </p>
-          <p className="font-mono text-[10px] text-ink/40 font-medium">
+          <p className="font-mono text-[12px] text-ink/40 font-medium">
             {lang === "en"
               ? "8 HMW questions prioritized by Impact vs Effort framework"
               : "8 個核心 HMW 問題依「影響力」×「執行難度」分類"}
@@ -244,7 +244,7 @@ export const HMWMatrix = () => {
           <div className="border border-sage/20 bg-sage/5 p-8 rounded-[32px] hover:bg-sage/10 transition-colors group">
             <div className="flex items-center gap-3 mb-6">
                <Zap className="w-4 h-4 text-sage" />
-               <p className="font-mono text-[10px] font-bold text-sage tracking-[0.3em] uppercase">
+               <p className="font-mono text-[12px] font-bold text-sage tracking-[0.3em] uppercase">
                  {lang === "en" ? "QUICK WIN — High Impact / Low Effort" : "速贏 — 高影響 / 低難度"}
                </p>
             </div>
@@ -252,13 +252,13 @@ export const HMWMatrix = () => {
               <motion.div key={item.id}
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
                 transition={{ delay: item.id * 0.06 }}
-                className="text-xs font-sans-cn text-ink/80 bg-white/80 border border-sage/10 p-5 mb-4 shadow-sm rounded-2xl group-hover:shadow-md transition-all"
+                className="text-[13px] font-sans-cn text-ink/80 bg-white/80 border border-sage/10 p-5 mb-4 shadow-sm rounded-2xl group-hover:shadow-md transition-all"
               >
                 <div className="flex justify-between items-start mb-2">
-                   <span className="font-mono text-[9px] text-sage font-bold tracking-widest uppercase bg-sage/5 px-2 py-0.5 rounded">HMW {item.id}</span>
+                   <span className="font-mono text-[11px] text-sage font-bold tracking-widest uppercase bg-sage/5 px-2 py-0.5 rounded">HMW {item.id}</span>
                    <div className="flex gap-3">
-                     <span className="font-mono text-[8px] text-cedar font-bold">IMP: {item.impact}</span>
-                     <span className="font-mono text-[8px] text-ink/30 font-bold">EFF: {item.effort}</span>
+                     <span className="font-mono text-[11px] text-cedar font-bold">IMP: {item.impact}</span>
+                     <span className="font-mono text-[11px] text-ink/30 font-bold">EFF: {item.effort}</span>
                    </div>
                 </div>
                 <p className="leading-relaxed font-light">{item.statement}</p>
@@ -270,7 +270,7 @@ export const HMWMatrix = () => {
           <div className="border border-cedar/20 bg-cedar/5 p-8 rounded-[32px] hover:bg-cedar/10 transition-colors group">
             <div className="flex items-center gap-3 mb-6">
                <Target className="w-4 h-4 text-cedar" />
-               <p className="font-mono text-[10px] font-bold text-cedar tracking-[0.3em] uppercase">
+               <p className="font-mono text-[12px] font-bold text-cedar tracking-[0.3em] uppercase">
                  {lang === "en" ? "STRATEGIC — High Impact / High Effort" : "策略性 — 高影響 / 高難度"}
                </p>
             </div>
@@ -278,13 +278,13 @@ export const HMWMatrix = () => {
               <motion.div key={item.id}
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
                 transition={{ delay: item.id * 0.06 }}
-                className="text-xs font-sans-cn text-ink/80 bg-white/80 border border-cedar/10 p-5 mb-4 shadow-sm rounded-2xl group-hover:shadow-md transition-all"
+                className="text-[13px] font-sans-cn text-ink/80 bg-white/80 border border-cedar/10 p-5 mb-4 shadow-sm rounded-2xl group-hover:shadow-md transition-all"
               >
                 <div className="flex justify-between items-start mb-2">
-                   <span className="font-mono text-[9px] text-cedar font-bold tracking-widest uppercase bg-cedar/5 px-2 py-0.5 rounded">HMW {item.id}</span>
+                   <span className="font-mono text-[11px] text-cedar font-bold tracking-widest uppercase bg-cedar/5 px-2 py-0.5 rounded">HMW {item.id}</span>
                    <div className="flex gap-3">
-                     <span className="font-mono text-[8px] text-cedar font-bold">IMP: {item.impact}</span>
-                     <span className="font-mono text-[8px] text-ink/30 font-bold">EFF: {item.effort}</span>
+                     <span className="font-mono text-[11px] text-cedar font-bold">IMP: {item.impact}</span>
+                     <span className="font-mono text-[11px] text-ink/30 font-bold">EFF: {item.effort}</span>
                    </div>
                 </div>
                 <p className="leading-relaxed font-light">{item.statement}</p>
@@ -296,7 +296,7 @@ export const HMWMatrix = () => {
           <div className="md:col-span-2 border border-blue-200/30 bg-blue-50/5 p-8 rounded-[32px] hover:bg-blue-50/10 transition-colors group">
             <div className="flex items-center gap-3 mb-6">
                <Sparkles className="w-4 h-4 text-blue-400" />
-               <p className="font-mono text-[10px] font-bold text-blue-500 tracking-[0.3em] uppercase">
+               <p className="font-mono text-[12px] font-bold text-blue-500 tracking-[0.3em] uppercase">
                  {lang === "en" ? "LONG-TERM BETS — Lower Impact / Very High Effort" : "長期投資 — 中等影響 / 極高難度"}
                </p>
             </div>
@@ -305,13 +305,13 @@ export const HMWMatrix = () => {
                 <motion.div key={item.id}
                   initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
                   transition={{ delay: item.id * 0.06 }}
-                  className="text-xs font-sans-cn text-ink/80 bg-white/80 border border-blue-200/20 p-5 shadow-sm flex-1 min-w-[280px] rounded-2xl group-hover:shadow-md transition-all"
+                  className="text-[13px] font-sans-cn text-ink/80 bg-white/80 border border-blue-200/20 p-5 shadow-sm flex-1 min-w-[280px] rounded-2xl group-hover:shadow-md transition-all"
                 >
                   <div className="flex justify-between items-start mb-2">
-                    <span className="font-mono text-[9px] text-blue-400 font-bold tracking-widest uppercase bg-blue-500/5 px-2 py-0.5 rounded">HMW {item.id}</span>
+                    <span className="font-mono text-[11px] text-blue-400 font-bold tracking-widest uppercase bg-blue-500/5 px-2 py-0.5 rounded">HMW {item.id}</span>
                     <div className="flex gap-3">
-                      <span className="font-mono text-[8px] text-cedar font-bold">IMP: {item.impact}</span>
-                      <span className="font-mono text-[8px] text-ink/30 font-bold">EFF: {item.effort}</span>
+                      <span className="font-mono text-[11px] text-cedar font-bold">IMP: {item.impact}</span>
+                      <span className="font-mono text-[11px] text-ink/30 font-bold">EFF: {item.effort}</span>
                     </div>
                   </div>
                   <p className="leading-relaxed font-light">{item.statement}</p>
@@ -327,33 +327,43 @@ export const HMWMatrix = () => {
 
 // ─── Market Insight Grid ────────────────────────────────────────────
 export const MarketInsightGrid = () => {
+  const { lang } = useLanguage();
   const insights = [
     {
-      label: "Market TAM/SAM",
-      value: "1.4B",
-      sub: "Premium Living Segment",
+      label: lang === "en" ? "Market TAM/SAM" : "市場規模",
+      value: "1.5B",
+      sub: lang === "en" ? "TW Furniture Market 2024" : "台灣家居市場 2024",
       icon: <TrendingUp className="w-6 h-6 text-cedar"/>,
-      growth: "+14.2% YoY",
-      detail: "Driven by 'Slow Living' trends in Tier 1 Asian cities.",
-      secondaryIcon: <Sparkles className="w-5 h-5 text-cedar/40" />
+      badge: "+4.0% CAGR",
+      detail: lang === "en"
+        ? "Taiwan premium living market projected to reach USD 1.9B by 2032. 53,646 new housing units in H1 2024 — 5-year high."
+        : "台灣家居市場預計 2032 年達 19 億美元。2024 上半年新屋 5.36 萬戶，創 5 年新高。",
+      secondaryIcon: <Sparkles className="w-5 h-5 text-cedar/40" />,
+      dataNote: "Mordor Intelligence 2024"
     },
     {
-      label: "Conversion Gap",
-      value: "92%",
-      sub: "Drop-off during Comparison",
+      label: lang === "en" ? "Conversion Gap" : "轉換率缺口",
+      value: "84%",
+      sub: lang === "en" ? "Mobile Cart Abandonment Rate" : "手機購物車放棄率",
       icon: <Target className="w-6 h-6 text-cedar"/>,
-      trend: "Friction Point",
-      detail: "High cognitive load during technical specs evaluation.",
-      secondaryIcon: <Zap className="w-5 h-5 text-cedar/40" />
+      badge: lang === "en" ? "Friction Point" : "核心痛點",
+      detail: lang === "en"
+        ? "Global mobile cart abandonment: 80.2%. Optimal checkout ≤14 form fields. Cognitive load during spec comparison drives 92% drop-off."
+        : "全球手機購物車放棄率 80.2%。最佳結帳欄位 ≤14 個。規格比較時認知負荷致使 92% 流失。",
+      secondaryIcon: <Zap className="w-5 h-5 text-cedar/40" />,
+      dataNote: "Baymard Institute 2025"
     },
     {
-      label: "Story ROI",
+      label: lang === "en" ? "Story ROI" : "敘事投資報酬",
       value: "3.5x",
-      sub: "LTV of Narrative Shoppers",
+      sub: lang === "en" ? "LTV of Narrative Shoppers" : "敘事購物者終身價值",
       icon: <Users className="w-6 h-6 text-cedar"/>,
-      trend: "Value Driver",
-      detail: "Artisan-backed products retain users 240% longer.",
-      secondaryIcon: <Heart className="w-5 h-5 text-cedar/40" />
+      badge: lang === "en" ? "Value Driver" : "價值驅動",
+      detail: lang === "en"
+        ? "Artisan-backed products retain users 240% longer. 82% of surveyed users prioritize sustainable materials over brand. Design system ROI: 671%."
+        : "職人溯源商品用戶留存率高 240%。82% 受訪者優先考慮永續材質。Design System ROI 達 671%。",
+      secondaryIcon: <Heart className="w-5 h-5 text-cedar/40" />,
+      dataNote: "Survey N=500, Forrester"
     }
   ];
 
@@ -373,12 +383,12 @@ export const MarketInsightGrid = () => {
             <div className="p-4 bg-white/40 rounded-2xl group-hover:bg-cedar/10 transition-colors shadow-glass border border-white/60">
               {item.icon}
             </div>
-            <span className="font-mono text-[10px] font-bold text-cedar tracking-[0.3em] uppercase bg-cedar/10 px-4 py-2 rounded-full border border-cedar/20">
-              {item.growth || item.trend}
+            <span className="font-mono text-[12px] font-bold text-cedar tracking-[0.3em] uppercase bg-cedar/10 px-4 py-2 rounded-full border border-cedar/20">
+              {item.badge}
             </span>
           </div>
 
-          <p className="font-mono text-[10px] opacity-40 mb-3 uppercase tracking-[0.3em] font-bold relative z-10">{item.label}</p>
+          <p className="font-mono text-[12px] opacity-40 mb-3 uppercase tracking-[0.3em] font-bold relative z-10">{item.label}</p>
 
           <div className="flex items-baseline gap-4 mb-4 relative z-10">
             <p className="text-5xl font-display text-ink group-hover:text-cedar transition-colors duration-700 tracking-tighter font-bold">{item.value}</p>
@@ -387,8 +397,9 @@ export const MarketInsightGrid = () => {
             </motion.div>
           </div>
 
-          <p className="text-base font-sans-cn font-bold text-ink/80 mb-4 relative z-10 leading-tight">{item.sub}</p>
-          <p className="text-xs font-sans-cn font-light opacity-60 leading-relaxed relative z-10 group-hover:opacity-100 transition-opacity font-medium">{item.detail}</p>
+          <p className="text-base font-sans-cn font-bold text-ink/80 mb-3 relative z-10 leading-tight">{item.sub}</p>
+          <p className="text-[13px] font-sans-cn font-light opacity-65 leading-relaxed relative z-10 group-hover:opacity-100 transition-opacity">{item.detail}</p>
+          <p className="mt-4 font-mono text-[11px] text-cedar/40 tracking-widest uppercase relative z-10 font-bold">{item.dataNote}</p>
         </motion.div>
       ))}
     </div>
